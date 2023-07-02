@@ -1,13 +1,12 @@
 /*------------------------------------*\
   #VARIABLES
 \*------------------------------------*/
-
-:root {
-    --bg-color:             #1A1A1D;
-    --font-color:           #6b6b6b;
+ :root {
+    --font-color:           #1A1A1D;
     --secondary-font-color: #ffffff;
-    --highlight-color:      #00B3CC;
-  }
+    --bg-color:             #6b6b6b;
+    --secondary-color:      #00B3CC;
+ }
   
   
   
@@ -24,14 +23,14 @@
 
 
 
+
 /*------------------------------------*\
   #MARGINS
 \*------------------------------------*/
 
- {
-  padding:       5px;
-  margin-top:    .5em;
-  margin-bottom: .5em;
+html {
+  margin: 0px;
+  padding: 0px;  
 }
 
 
@@ -47,36 +46,166 @@
 
 h1     { font-size: clamp(18px, 5vw, 50px); }
 
-h2     { font-size: clamp(15px, 4vw, 30px); }
+h2     { font-size: clamp(14px, 3.5vw, 28px); }
 
-h1, h2 { margin:    min(7vh, 2.75rem) 0 1.05rem; }
+h4     { font-size: clamp(10px, 2.5vw, 15px); } 
 
 
 
 
 
 /*------------------------------------*\
-  #BASE FONT
+  #FONTS
 \*------------------------------------*/
 
 html {
   font-size:   min(3.2vw, 14px);
-  font-family: ;
-  color:       var();
+  font-family: 'Roboto', sans-serif;
+  color:       var(--font-color);
 }
 
 
 
 
 
+/*------------------------------------*\
+  #NAVBAR
+\*------------------------------------*/
 
+.navbar {
+  background-color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 15rem;
+  padding: 1.5rem;
+  margin-left: 3rem;
+}
+
+.navbar__links {
+  padding-right: 3rem;
+}
+
+.navbar__links ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar__links li {
+  list-style: none;
+}
+
+.navbar__links li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: .5rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  display: block;
+}
+
+.navbar__links li a:hover {
+  color: var(--secondary-font-color);
+  font-weight: 400;
+}
+
+.navbar__button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 16px;
+}
+
+.navbar__button .bar {
+  height: 1.5px;
+  width: 100%;
+  background-color: var(--secondary-font-color);
+  border-radius: 9999px;
+}
+
+@media (max-width: 860px) {
+
+.navbar__button {
+  display: flex;
+}
+
+.navbar__links {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar__links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+.navbar__link li a {
+  padding: .5rem 1rem;
+}
+
+.navbar__logo img {
+  margin: 0 auto;
+}
+
+.navbar__links.active {
+  display: flex;
+}
+
+}
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background: url('assets/cover.jpg') no-repeat center;
+  background-size: cover;
+  height: 470px;
+}
+
+.header__text {
+  margin: 0rem 3rem 8rem 3rem;
+  text-align: center;
+  line-height: 1.32;
+}
+
+.header__text h4 {
+  text-align: right;
+  padding: 1.5rem;
+  margin-right: 5rem;
+  font-style: italic;
+}
 
 
 /*------------------------------------*\
   #MAIN CONTENT
 \*------------------------------------*/
 
-
+main {
+  background-color: greenyellow;
+}
 
 
 
@@ -84,7 +213,9 @@ html {
   #FOOTER
 \*------------------------------------*/
 
-
+footer {
+  background-color: orange;
+}
 
 
 /*------------------------------------*\
@@ -94,3 +225,13 @@ html {
 @media (min-width: 768px) {
 
 }
+
+
+
+
+
+
+
+
+
+
