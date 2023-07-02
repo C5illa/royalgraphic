@@ -6,6 +6,8 @@
     --secondary-font-color: #ffffff;
     --bg-color:             #6b6b6b;
     --secondary-color:      #00B3CC;
+    --main-font:            'Roboto', sans-serif;
+    --secondary-font:       'Roboto Slab', serif;     
  }
   
   
@@ -80,8 +82,7 @@ header {
   width: 100%;
   background: url('assets/cover.jpg') no-repeat center;
   background-size: cover;
-  height: 480px;
-  letter-spacing: .05rem;
+  height: 520px;
 }
 
 
@@ -198,12 +199,15 @@ header {
   display: block;
   content: "";
   background-color: var(--secondary-color);
-  height: 1px;
-  width: 90%;
-  margin: 0.5rem auto;
+  height: 1.8px;
+  width: 70%;
+  border-radius: 9999px;
 }
 
 .cover {
+  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Playfair Display', serif;*/
+  letter-spacing: .05rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,7 +216,7 @@ header {
 }
 
 .cover__text {
-  padding: 2rem 3rem 0rem 3rem;
+  padding: 4rem 3rem 0rem 3rem;
   text-align: center;
   line-height: 1.32;
 }
@@ -220,17 +224,18 @@ header {
 .cover__text--name {
   text-align: right;
   font-style: italic;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .cover__text--typewriter {
-  color: var(--font-color);
+  font-family: ;
   cursor: pointer;
   border-right: 1.5px solid var(--font-color);
   animation: typewriter 60s steps(40) normal infinite, blinkTextCursor 1s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
-  }
+  margin-top: .15rem;
+}
 
 @keyframes typewriter {
   0% {
@@ -239,11 +244,14 @@ header {
   5% {
     width: 100%
   }
-  95% {
+  92% {
     width: 100%;
   }
-  100% {
+  92.05% {
     width: 0%;
+  }
+  100% {
+    width:0%;
   }
 }
 
