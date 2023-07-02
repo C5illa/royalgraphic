@@ -5,37 +5,70 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&family=Mulish&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&family=Roboto+Serif&family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="asstes/mini-icon.png">
  </head>
 
 <body>
 
+ <header>
+  
+  <nav class="navbar">
 
-  <header>
-    
-   <img class="nav__logo--left" src="assets/logo.png" alt="logo">
+    <div>
+      <img class="navbar__logo" src="assets/logo.png" alt="logo">
+    </div>
+  
+    <a href="#" class="navbar__button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
 
-   <nav id="menu-top">
-
-    <a href="#">Szolgáltatások</a>
-    <a href="#">Portfólió</a>
-    <a href="#">Árak</a>
-    <a href="#">Megrendelés</a>
-    <a href="#">Kapcsolat</a>
-    <a href="#">Rólam</a>
-    <a href="#">Blog</a>
-    
-   </nav>
-   
-   <div class="header__text">
-    <h4>"Az egyszerűt bonyolulttá tenni mindennapos;
-      a bonyolultat egyszerűvé varázsolni... ez a kreativitás!"</h4>
-    <h6>Charles Mingus</h6>
+   <div class="navbar__links">
+     <ul>
+      <li><a href="#">Szolgáltatások</a></li>
+      <li><a href="#">Portfólió</a></li>
+      <li><a href="#">Árak</a></li>
+      <li><a href="#">Megrendelés</a></li>
+      <li><a href="#">Kapcsolat</a></li>
+      <li><a href="#">Rólam</a></li>
+      <li><a href="#">Blog</a></li>
+     </ul>  
    </div>
 
+  </nav>
+
+
+
+
+
+  <div class="cover">
+    <div>
+      <h2 class="cover__text">"Az egyszerűt bonyolulttá tenni mindennapos;<br>
+      a bonyolultat egyszerűvé varázsolni...</h2>
+    </div>
+
+    <div>
+      <h2  class="cover__text--typewriter">...ez a kreativitás!"</h2>
+    </div>
+
+    <div>
+      <h4 class="cover__text--name">Charles Mingus</h4>
+    </div>
+  </div>
+
  </header>
+
+
+
+
+
+
 
 
 
@@ -113,7 +146,7 @@
    <script>
      document.write(new Date().getUTCFullYear());
    </script>
-   <img src="assets/images/RG_LOGO-white.png">
+   <img src="assets/logo-wt.png">
    | MINDEN JOG FENNTARTVA
  </div>
 
@@ -128,5 +161,15 @@
 
 
 </body>
+
+
+<script>
+ const navbarButton = document.getElementsByClassName('navbar__button')[0]
+ const navbarLinks = document.getElementsByClassName('navbar__links')[0]
+
+ navbarButton.addEventListener('click', () => {
+ navbarLinks.classList.toggle('active')
+ })
+  </script>
 
 </html>
