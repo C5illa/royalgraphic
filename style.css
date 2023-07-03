@@ -133,8 +133,6 @@ header {
   filter: opacity(70%);
 }
 
-
-
 .navbar__button {
   position: absolute;
   top: 2.4rem;
@@ -157,10 +155,12 @@ header {
 .bar2 {
   width: 80%;
 }
+
 /*HAMBURGER MENU ANIMATION*/
 
 .bar1 {
   transition: all .8s ease-in-out;
+  transform-origin: left center;
 }
 
 .bar2 {
@@ -169,13 +169,6 @@ header {
 
 .bar3 {
   transition: all .8s ease-in-out;
-}
-
-.bar1 {
-  transform-origin: left center;
-}
-
-.bar3 {
   transform-origin: left center;
 }
 
@@ -214,7 +207,7 @@ header {
 .navbar__links ul {
     flex-direction: column;
     width: 100%;
-  }
+}
 
 .navbar__links li a {
   padding: .4rem 0rem;
