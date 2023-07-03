@@ -130,8 +130,10 @@ header {
 .navbar__links li a:hover {
   font-weight: 600;
   transform: scale(1.08);
-  color: var(--secondary-color);
+  filter: opacity(70%);
 }
+
+
 
 .navbar__button {
   position: absolute;
@@ -140,18 +142,53 @@ header {
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 26px;
   height: 16px;
 }
 
-.navbar__button .bar {
+.bar1, .bar2, .bar3 {
   height: 1.5px;
   width: 100%;
   background-color: var(--font-color);
   border-radius: 10px;
 }
 
-@media (max-width: 980px) {
+.bar2 {
+  width: 80%;
+}
+/*HAMBURGER MENU ICON ANIMATION*/
+
+.bar1 {
+  transform-origin: center center;
+}
+
+.bar2 {
+  transform-origin: center center;
+}
+
+.bar3 {
+  transform-origin: center center;
+}
+
+.navbar__button.open .bar1 {
+  transform: rotate(45deg);
+
+}
+
+.navbar__button.open .bar2 {
+  width: 0%;
+  opacity: 0;
+}
+
+.navbar__button.open .bar3 {
+  transform: rotate(-45deg);
+}
+
+
+/*HAMBURGER MENU ICON ANIMATION END*/
+
+@media (max-width: 900px) {
 
 .navbar__button {
   display: flex;
@@ -175,13 +212,6 @@ header {
 
 .navbar__links li a {
   padding: .4rem 0rem;
-}
-
-.navbar__links li a:hover {
-  background-color: var(--secondary-color);
-  border-radius: 9999px;
-  color: var(--secondary-font-color);
-  transform: scale(100%);
 }
 
 .navbar__links.active {
@@ -277,7 +307,7 @@ header {
 \*------------------------------------*/
 
 main {
-  background-color: var(--secondary-color);
+  background-color: grey;
 }
 
 

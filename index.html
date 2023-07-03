@@ -24,9 +24,9 @@
     </div>
   
     <a href="#" class="navbar__button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
     </a>
 
    <div class="navbar__links">
@@ -169,7 +169,22 @@
 
  navbarButton.addEventListener('click', () => {
  navbarLinks.classList.toggle('active')
+
  })
+
+ const menuBtn = document.querySelector('.navbar__button');
+ let menuOpen = false;
+ menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  }
+  else {
+    menuBtn.classList.remove('open');
+    menuOpen = false
+  }
+})
+
   </script>
 
 </html>
