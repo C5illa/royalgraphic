@@ -143,7 +143,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 26px;
+  width: 24px;
   height: 16px;
 }
 
@@ -157,24 +157,31 @@ header {
 .bar2 {
   width: 80%;
 }
-/*HAMBURGER MENU ICON ANIMATION*/
+/*HAMBURGER MENU ANIMATION*/
 
 .bar1 {
-  transform-origin: center center;
+  transition: all .8s ease-in-out;
 }
 
 .bar2 {
-  transform-origin: center center;
+  transition: all .8s ease-in-out;
 }
 
 .bar3 {
-  transform-origin: center center;
+  transition: all .8s ease-in-out;
+}
+
+.bar1 {
+  transform-origin: left center;
+}
+
+.bar3 {
+  transform-origin: left center;
 }
 
 .navbar__button.open .bar1 {
-  transform: rotate(45deg);
-
-}
+   transform: scale(70%);transform: rotate(38deg);
+ }
 
 .navbar__button.open .bar2 {
   width: 0%;
@@ -182,11 +189,10 @@ header {
 }
 
 .navbar__button.open .bar3 {
-  transform: rotate(-45deg);
+  transform: rotate(-38deg);
 }
 
-
-/*HAMBURGER MENU ICON ANIMATION END*/
+/*END*/
 
 @media (max-width: 900px) {
 
