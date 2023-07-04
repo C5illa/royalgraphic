@@ -167,16 +167,16 @@ header {
 /*HAMBURGER MENU ANIMATION*/
 
 .bar1 {
-  transition: all .8s ease-in-out;
+  transition: all .5s ease-in-out;
   transform-origin: center;
 }
 
 .bar2 {
-  transition: all .8s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .bar3 {
-  transition: all .8s ease-in-out;
+  transition: all .5s ease-in-out;
   transform-origin: center;
 }
 
@@ -208,10 +208,10 @@ header {
   width: 100%;
   display: none;
   margin-top: -0.5rem;
-  animation: openmenu 3s normal ease;
+  animation: openmenu .3s;
   white-space: nowrap;
-  overflow: hidden;
-  
+  overflow: hidden; 
+  transform-origin: top center;
 }
 
 .navbar {
@@ -233,12 +233,17 @@ header {
 }
 
 @keyframes openmenu {
+
   0% {
-   transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+    transform: scaleY(0)
+}
+80% {
+    transform: scaleY(1.05)
+}
+100% {
+    transform: scaleY(1)
+}
+
 }
 
 }
