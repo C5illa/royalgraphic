@@ -293,7 +293,7 @@ header {
   cursor: pointer;
   border-right: 2.32px solid;
   margin-right: .8px;
-  animation: typewriter 15s steps(40) normal infinite, blinkTextCursor 1s step-end infinite;
+  animation: typewriter 14s steps(50) normal infinite, blinkTextCursor 1s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   margin-top: .15rem;
@@ -306,10 +306,10 @@ header {
   15% {
     width: 100%
   }
-  80% {
+  82% {
     width: 100%;
   }
-  80.05% {
+  82.05% {
     width: 0%;
   }
   100% {
