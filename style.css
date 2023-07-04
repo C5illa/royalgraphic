@@ -130,7 +130,7 @@ header {
 .navbar__links li a:hover {
   font-weight: 600;
   transform: scale(1.08);
-  filter: opacity(70%);
+  filter: opacity(50%);
 }
 
 .navbar__button {
@@ -149,31 +149,31 @@ header {
   height: 1.5px;
   width: 100%;
   background-color: var(--font-color);
-  border-radius: 10px;
 }
 
 .bar2 {
   width: 80%;
+  border-radius: 20px;
 }
 
 /*HAMBURGER MENU ANIMATION*/
 
 .bar1 {
-  transition: all .5s ease-in-out;
-  transform-origin: left center;
+  transition: all .7s ease-in-out;
+  transform-origin: center;
 }
 
 .bar2 {
-  transition: all .5s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
 .bar3 {
-  transition: all .5s ease-in-out;
-  transform-origin: left center;
+  transition: all .7s ease-in-out;
+  transform-origin: center;
 }
 
 .navbar__button.open .bar1 {
-   transform: scale(70%);transform: rotate(38deg);
+  transform: rotate(45deg) translateY(10.25px);
  }
 
 .navbar__button.open .bar2 {
@@ -182,15 +182,16 @@ header {
 }
 
 .navbar__button.open .bar3 {
-  transform: rotate(-38deg);
+  transform: rotate(-45deg) translateY(-10.25px);
 }
 
-/*END*/
+/***/
 
 @media (max-width: 900px) {
 
 .navbar__button {
   display: flex;
+  border-radius: 9px;
 }
 
 .navbar__links {
