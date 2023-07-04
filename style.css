@@ -135,7 +135,7 @@ header {
 .navbar__button {
   position: absolute;
   top: 2.4rem;
-  right: 1.2rem;
+  right: 2.4rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -225,7 +225,7 @@ header {
 }
 
 .navbar__links li a {
-  padding: .4rem 0rem;
+  padding: .3rem 0rem;
 }
 
 .navbar__links.active {
@@ -306,10 +306,10 @@ header {
   15% {
     width: 100%
   }
-  82% {
+  85% {
     width: 100%;
   }
-  82.05% {
+  85.05% {
     width: 0%;
   }
   100% {
@@ -346,15 +346,53 @@ main {
 \*------------------------------------*/
 
 footer {
-  background-color: orange;
+  background-color: var(--font-color);
+  color: var(--secondary-font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  margin-top: 1rem;
+  width: 95%;
+}
 
-/*------------------------------------*\
-  #MODIFIERS
-\*------------------------------------*/
+.footer__copyright {
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 48%;
+}
 
+.footer__content a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  font-weight: 400;
+}
 
+.footer__up {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 95%;
+  margin: .5rem 0rem;
+}
+
+#up-button {
+  width: 3rem;
+  padding: .5rem;
+}
+
+.footer__logo {
+  width: 105px;
+}
 
 
 
