@@ -41,9 +41,6 @@ html {
 
 
 
-
-
-
 /*------------------------------------*\
   #HEADINGS
 \*------------------------------------*/
@@ -133,6 +130,8 @@ header {
   filter: opacity(50%);
 }
 
+/*HAMBURGER BUTTON*/
+
 .navbar__button {
   position: absolute;
   top: 2.4rem;
@@ -145,35 +144,45 @@ header {
   height: 16px;
 }
 
-.bar1, .bar2, .bar3 {
-  height: 1.5px;
-  width: 100%;
+.navbar__button span {
+  height: 3px;
   background-color: var(--font-color);
 }
 
+.bar1 {
+    width: 100%;
+    border-radius: 9999px;
+  }
+
 .bar2 {
   width: 80%;
-  border-radius: 20px;
+  border-radius: 9999px;
+}
+
+.bar3 {
+  width: 100%;
+  border-radius: 9999px;
 }
 
 /*HAMBURGER MENU ANIMATION*/
 
 .bar1 {
-  transition: all .7s ease-in-out;
+  transition: all .8s ease-in-out;
   transform-origin: center;
 }
 
 .bar2 {
-  transition: all .7s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .bar3 {
-  transition: all .7s ease-in-out;
+  transition: all .8s ease-in-out;
   transform-origin: center;
 }
 
 .navbar__button.open .bar1 {
-  transform: rotate(45deg) translateY(10.25px);
+  transform: rotate(45deg) translateY(9.5px);
+  width: 80%;
  }
 
 .navbar__button.open .bar2 {
@@ -182,7 +191,8 @@ header {
 }
 
 .navbar__button.open .bar3 {
-  transform: rotate(-45deg) translateY(-10.25px);
+  transform: rotate(-45deg) translateY(-9.5px);
+  width: 80%;
 }
 
 /***/
@@ -198,6 +208,10 @@ header {
   width: 100%;
   display: none;
   margin-top: -0.5rem;
+  animation: openmenu 3s normal ease;
+  white-space: nowrap;
+  overflow: hidden;
+  
 }
 
 .navbar {
@@ -217,6 +231,16 @@ header {
 .navbar__links.active {
   display: flex;
 }
+
+@keyframes openmenu {
+  0% {
+   transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 }
 
 
@@ -264,7 +288,7 @@ header {
   cursor: pointer;
   border-right: 2.32px solid;
   margin-right: .8px;
-  animation: typewriter 30s steps(40) normal infinite, blinkTextCursor 1s step-end infinite;
+  animation: typewriter 15s steps(40) normal infinite, blinkTextCursor 1s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   margin-top: .15rem;
@@ -274,13 +298,13 @@ header {
   0% {
     width: 0%;
   }
-  10% {
+  15% {
     width: 100%
   }
-  92% {
+  80% {
     width: 100%;
   }
-  92.05% {
+  80.05% {
     width: 0%;
   }
   100% {
