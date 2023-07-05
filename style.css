@@ -401,9 +401,8 @@ footer {
 }
 
 .footer__content a:hover {
-  color: var(--secondary-color);
-  transform: scale(105%);
-  font-weight: 400;
+  color: var(--bg-color);
+  transform: scale(107%);
 }
 
 .footer__up {
@@ -430,8 +429,7 @@ footer {
 
 .footer__content a {
   padding: .4rem;
-}
-
+  }
 }
 
 @media (max-width: 480px) {
