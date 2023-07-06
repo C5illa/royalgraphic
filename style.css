@@ -415,6 +415,10 @@ footer {
   padding: .5rem;
 }
 
+#up-button:hover {
+  transform: translateY(-4px);
+}
+
 .footer__logo {
   height: 14px;
 }
