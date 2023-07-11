@@ -167,32 +167,30 @@ header {
 /*HAMBURGER MENU ANIMATION*/
 
 .bar1 {
-  transition: all .5s ease-in-out;
+  transition: all .5s ease;
   transform-origin: center;
 }
 
 .bar2 {
-  transition: all .5s ease-in-out;
+  transition: all .5s ease;
 }
 
 .bar3 {
-  transition: all .5s ease-in-out;
+  transition: all .5s ease;
   transform-origin: center;
 }
 
 .navbar__button.open .bar1 {
-  transform: rotate(45deg) translateY(9.5px);
-  width: 80%;
+  transform: translateY(6.5px) rotate(45deg);
  }
 
 .navbar__button.open .bar2 {
   width: 0%;
-  opacity: 0;
+  opacity: 0%;
 }
 
 .navbar__button.open .bar3 {
-  transform: rotate(-45deg) translateY(-9.5px);
-  width: 80%;
+  transform: translateY(-6.5px) rotate(-45deg);
 }
 
 /***/
