@@ -399,7 +399,7 @@ footer {
 }
 
 .footer__content a:hover {
-  color: var(--bg-color);
+  color: var(--secondary-color);
   transform: scale(107%);
 }
 
