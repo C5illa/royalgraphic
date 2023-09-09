@@ -339,6 +339,46 @@ main {
 
 
 
+
+
+/*------------------------------------*\
+  #CONTACT
+\*------------------------------------*/
+.contact {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.contact__review {
+    display: inline-block;
+    padding: 1em 2em;
+    color: var(--font-color);
+    font-size: 1.2rem;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.contact__review:hover{
+  transform: scale(1.08);
+}
+
+.contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
+  width: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  color: #1c597b;
+ }
+
+
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
