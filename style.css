@@ -392,6 +392,31 @@ li {
   padding-top: 1.2rem;
 }
 
+.contact__phone {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 1.2rem;
+}
+
+/*PHONE-ANIMATION*/
+
+.contact--increase {
+  animation-name: increase;
+  animation-duration: 0.9s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes increase {
+  0% {transform: scale(1.1);}
+  100% {transform: scale(0.9);}
+}
+
+
+
 
 
 
