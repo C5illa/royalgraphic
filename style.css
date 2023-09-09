@@ -359,6 +359,7 @@ main {
 }
 
 .contact__review {
+  padding: 0.3rem;
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--font-color);
@@ -366,7 +367,7 @@ main {
 }
 
 .contact__review:hover {
-  transform: scale(1.05);
+  letter-spacing: .05rem;
 }
 
 .contact__icon {
