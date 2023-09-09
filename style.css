@@ -344,25 +344,25 @@ main {
 /*------------------------------------*\
   #CONTACT
 \*------------------------------------*/
+
 .contact {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
-
-.contact__review {
-    display: inline-block;
-    padding-bottom: 1.2rem;
-    color: var(--font-color);
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 600;
+  padding-bottom: 1rem;
 }
 
-a.contact__review:hover{
-  transform: scale(1.08);
+.contact__review {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+.contact__review:hover {
+  transform: scale(1.2);
 }
 
 .contact__icon {
