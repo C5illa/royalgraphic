@@ -366,8 +366,12 @@ a.contact__review:hover{
   transform: scale(1.08);
 }
 
+.contact__icon {
+    padding: 1.2rem;
+   }
+
 .contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
-  width: 35px;
+  width: 60px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -377,6 +381,11 @@ li {
   display: inline-block;
   color: #1c597b;
  }
+
+ .contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
 
 
 /*------------------------------------*\
