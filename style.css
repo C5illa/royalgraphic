@@ -354,6 +354,10 @@ main {
   padding-bottom: 1rem;
 }
 
+.contact__text {
+  padding-top: 1rem;
+}
+
 .contact__review {
   font-size: 1.2rem;
   text-decoration: none;
