@@ -354,14 +354,8 @@ main {
   padding-bottom: 1rem;
 }
 
-.contact__review {
-  text-align: center;
-  line-height: 1.4rem;
-  width: 80%;
-}
-
 .contact__review--write {
-  padding: 0.4rem;
+  padding: .35rem;
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--font-color);
@@ -369,7 +363,9 @@ main {
 }
 
 .contact__review--write:hover {
-  letter-spacing: 2px;
+  border-radius: 9999px;
+  background-color: var(--font-color);
+  color: var(--secondary-color)
 }
 
 .contact__icon {
