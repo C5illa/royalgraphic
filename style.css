@@ -357,6 +357,7 @@ main {
 .contact__review {
   text-align: center;
   line-height: 1.4rem;
+  width: 80%;
 }
 
 .contact__review--write {
