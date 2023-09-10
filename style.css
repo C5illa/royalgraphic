@@ -354,8 +354,9 @@ main {
   padding-bottom: 1rem;
 }
 
-.contact__text {
-  padding-top: 1rem;
+.contact__review {
+  text-align: center;
+  line-height: 1.4rem;
 }
 
 .contact__review--write {
