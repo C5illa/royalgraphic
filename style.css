@@ -358,7 +358,7 @@ main {
   padding-top: 1rem;
 }
 
-.contact__review {
+.contact__review--write {
   padding: 0.4rem;
   font-size: 1.2rem;
   text-decoration: none;
@@ -366,7 +366,7 @@ main {
   font-weight: 500;
 }
 
-.contact__review:hover {
+.contact__review--write:hover {
   letter-spacing: 2px;
 }
 
