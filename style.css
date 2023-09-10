@@ -355,8 +355,8 @@ main {
 }
 
 .contact__review--write {
-  padding: .35rem;
-  font-size: 1.2rem;
+  padding: .1rem .5rem .1rem .5rem;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--font-color);
   font-weight: 500;
