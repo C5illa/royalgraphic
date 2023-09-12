@@ -70,10 +70,13 @@ html {
 #menu-services, #menu-portfolio, #menu-price, #menu-order, #menu-contact {
   text-transform: uppercase;
   padding-top: 1.2rem;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: .5px;
   text-align: center;
+  font-family: var(--font-pair);
+  padding-bottom: 0.5rem;
 }
+
 
 
 
