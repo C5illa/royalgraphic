@@ -66,7 +66,15 @@ html {
   color:       var(--font-color);
 }
 
+/*MENU TITLES*/
 
+.services, .portfolio, .price, .order, .contact {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding-top: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 
@@ -408,13 +416,6 @@ li {
  .contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
-}
-
-#menu-contact {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  padding-top: 1.2rem;
-  font-weight: bold;
 }
 
 .contact__phone {
