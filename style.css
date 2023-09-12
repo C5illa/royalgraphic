@@ -6,6 +6,7 @@
     --secondary-font-color: #ffffff;
     --bg-color:             #6b6b6b;
     --secondary-color:      #00B3CC;
+    --star-color:           #fbbc04;
     --main-font:            'Roboto', sans-serif;
     --slab-font:            'Roboto Slab', serif;
     --serif-font:           'Roboto Serif', serif; 
@@ -352,6 +353,15 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+}
+
+.contact__review--reviews {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.contact__review--stars {
+  color: var(--star-color);
 }
 
 .contact__review--write {
