@@ -360,6 +360,10 @@ main {
   color: var(--font-color);
 }
 
+.contact__review--reviews:hover {
+  opacity: .32;
+}
+
 .contact__review--stars {
   color: var(--star-color);
 }
@@ -498,9 +502,8 @@ footer {
 
 .footer__content a {
   text-decoration: none;
-  font-size: clamp(12px, 1.8rem, 16px);
+  font-size: clamp(10px, 1.1rem, 14px);
   color: var(--secondary-font-color);
-  font-weight: 400;
 }
 
 .footer__content a:hover {
