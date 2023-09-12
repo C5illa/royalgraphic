@@ -4,7 +4,6 @@
  :root {
     --font-color:           #1A1A1D;
     --secondary-font-color: #ffffff;
-    --bg-color:             #6b6b6b;
     --secondary-color:      #00B3CC;
     --star-color:           #fbbc04;
     --main-font:            'Roboto', sans-serif;
@@ -71,7 +70,8 @@ html {
 #menu-services, #menu-portfolio, #menu-price, #menu-order, #menu-contact {
   text-transform: uppercase;
   padding-top: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: .5px;
   text-align: center;
 }
 
