@@ -365,17 +365,22 @@ main {
 }
 
 .contact__review--write {
-  padding: .1rem .5rem .1rem .5rem;
+  padding-top: .65rem;
+  text-align: center;
+}
+
+.contact__review--link {
   font-size: 1rem;
+  padding: .2rem .5rem .2rem .5rem;
   text-decoration: none;
   color: var(--font-color);
   font-weight: 500;
 }
 
-.contact__review--write:hover {
+.contact__review--link:hover {
+  color: var(--secondary-color);
   border-radius: 9999px;
   background-color: var(--font-color);
-  color: var(--secondary-color)
 }
 
 .contact__icon {
