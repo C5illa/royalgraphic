@@ -73,7 +73,7 @@ html {
   text-transform: uppercase;
   padding-top: 1.2rem;
   padding-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: .5px;
   text-align: center;
   font-family: var(--font-pair);
@@ -349,7 +349,6 @@ header {
 \*------------------------------------*/
 
 main {
-  background-color: grey;
   width: 100%;
   margin: 0 auto;
 }
@@ -380,7 +379,7 @@ main {
 
 .menu-services__icon {
   filter: var(--png-light-filter);
-  width: calc(100vw / 8);
+  width: clamp(50px, 10vw, 100px);
   align-self: center;
 }
 
@@ -392,11 +391,11 @@ main {
 .services h3 {
   font-family: var(--font-pair);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   padding-top: .5rem;
 }
 
-.services__text {
+.services__text, .price__text {
   width: 90%;
   margin: 0 auto;
   background-color: var(--secondary-color);
@@ -407,7 +406,23 @@ main {
 
 }
 
+@media (max-width: 768px) {
 
+  .services {
+  flex-direction: column;
+ 
+ 
+
+
+
+}
+
+.menu-services__item {
+  display: flex;
+  flex-direction: row;
+}
+
+}
 
 
 
