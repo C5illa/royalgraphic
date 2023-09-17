@@ -364,6 +364,8 @@ main {
 .services {
   background-color: yellow;
   width: 95%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
