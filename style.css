@@ -299,7 +299,7 @@ header {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 80%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -327,14 +327,33 @@ header {
 }
 .popup .content {
   max-height: 50%;
-  overflow: none;
   text-align: center;
   line-height: 1.3rem;
+}
+
+.popup p {
+  padding-bottom: 1rem;
+}
+
+.popup__button {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  background-color: var(--font-color);
+  padding: .5rem;
+  border-radius: 9999px;
+}
+
+.popup__button:hover {
+  background-color: var(--secondary-color);
 }
 
 .content h6 {
   font-family: var(--font-pair);
   font-weight: 600;
+}
+
+.profile-pic {
+  width: 111px;
 }
 
 @media screen and (max-width: 700px){
