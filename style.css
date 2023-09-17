@@ -358,13 +358,13 @@ main {
 
 
 /*------------------------------------*\
-  #SERVICES
+  #SERVICES & ORDER
 \*------------------------------------*/
 
-.services {
+.services, .order {
   background-color: rgb(235, 235, 226);
   width: 95%;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 0 auto;
   display: flex;
@@ -372,23 +372,23 @@ main {
   text-align: center;
 }
 
-.menu-services__item {
+.menu-services__item, .menu-order__item {
   display: flex;
   flex-direction: column;
 }
 
-.menu-services__icon {
+.menu-services__icon, .menu-order__icon {
   filter: var(--png-light-filter);
   width: clamp(50px, 10vw, 100px);
   align-self: center;
 }
 
-.menu-services__text {
+.menu-services__text, .menu-order__text {
   padding-top: .5rem;
   line-height: 1.1rem;
 }
 
-.services h3 {
+.services h3, .order h3 {
   font-family: var(--font-pair);
   text-transform: uppercase;
   font-weight: 600;
@@ -408,7 +408,7 @@ main {
 
 @media (max-width: 768px) {
 
-  .services {
+  .services, .order {
   flex-direction: column;
  
  
@@ -417,7 +417,7 @@ main {
 
 }
 
-.menu-services__item {
+.menu-services__item, .menu-order__item {
   display: flex;
   flex-direction: row;
 }
