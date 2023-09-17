@@ -72,15 +72,21 @@ html {
 #menu-services, #menu-portfolio, #menu-price, #menu-order, #menu-contact {
   text-transform: uppercase;
   padding-top: 1.2rem;
-  font-weight: 800;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
   letter-spacing: .5px;
   text-align: center;
   font-family: var(--font-pair);
-  padding-bottom: 0.5rem;
+  
 }
 
+.menu-services__text {
+  padding-top: .5rem;
+}
 
-
+.services h3 {
+  padding-top: .5rem;
+}
 
 
 
@@ -362,7 +368,7 @@ main {
 \*------------------------------------*/
 
 .services {
-  background-color: yellow;
+  background-color: rgb(235, 235, 226);
   width: 95%;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -383,7 +389,10 @@ main {
   align-self: center;
 }
 
-
+.services h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 
 
