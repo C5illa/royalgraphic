@@ -2,14 +2,16 @@
   #VARIABLES
 \*------------------------------------*/
  :root {
-    --font-color:           #1A1A1D;
+    --font-color:           #0A1522;
     --secondary-font-color: #ffffff;
     --secondary-color:      #00B3CC;
     --star-color:           #fbbc04;
     --main-font:            'Roboto', sans-serif;
     --slab-font:            'Roboto Slab', serif;
     --serif-font:           'Roboto Serif', serif; 
-    --font-pair:            'Raleway', sans-serif;    
+    --font-pair:            'Raleway', sans-serif; 
+    --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
+    --png-dark-filter:       invert(7%) sepia(10%) saturate(3768%) hue-rotate(172deg) brightness(95%) contrast(97%);     
  }
   
   
@@ -355,6 +357,19 @@ main {
 
 
 /*------------------------------------*\
+  #SERVICES
+\*------------------------------------*/
+
+.menu-services__icon {
+  filter: var(--png-light-filter);
+}
+
+
+
+
+
+
+/*------------------------------------*\
   #CONTACT
 \*------------------------------------*/
 
@@ -409,6 +424,7 @@ main {
   width: 60px;
   padding-left: 10px;
   padding-right: 10px;
+  filter: var(--png-dark-filter);
 }
 
 li {
@@ -519,6 +535,7 @@ footer {
 .footer__up {
   display: flex;
   justify-content: end;
+  filter: var(--png-light-filter);
 }
 
 #up-button {
