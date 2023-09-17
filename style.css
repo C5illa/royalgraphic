@@ -80,13 +80,7 @@ html {
   
 }
 
-.menu-services__text {
-  padding-top: .5rem;
-}
 
-.services h3 {
-  padding-top: .5rem;
-}
 
 
 
@@ -389,10 +383,16 @@ main {
   align-self: center;
 }
 
+.menu-services__text {
+  padding-top: .5rem;
+}
+
 .services h3 {
   text-transform: uppercase;
   font-weight: bold;
+  padding-top: .5rem;
 }
+
 
 
 
