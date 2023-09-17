@@ -261,6 +261,90 @@ header {
 
 }
 
+/*POPUP ABOUT ME*/
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--font-pair);
+  font-weight: bold;
+  
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--font-color);
+}
+.popup .close:hover {
+  color: var(--secondary-color)
+}
+.popup .content {
+  max-height: 50%;
+  overflow: none;
+  text-align: center;
+  line-height: 1.3rem;
+}
+
+.content h6 {
+  font-family: var(--font-pair);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 80%;
+  }
+  .popup{
+    width: 80%;
+  }
+}
 
 
 
