@@ -47,11 +47,11 @@ html {
   #HEADINGS
 \*------------------------------------*/
 
-h1     { font-size: clamp(18px, 5vw, 50px); }
+h1     { font-size: clamp(19px, 5.5vw, 55px); }
 
 h2     { font-size: clamp(12px, 3vw, 22px); }
 
-h3     { font-size: clamp(10px, 2.5vw, 18px);}
+h3     { font-size: clamp(10px, 2.2vw, 17px);}
 
 h4     { font-size: clamp(8px, 2vw, 13px); } 
 
@@ -73,7 +73,7 @@ html {
   text-transform: uppercase;
   padding-top: 1.2rem;
   padding-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: .5px;
   text-align: center;
   font-family: var(--font-pair);
@@ -351,6 +351,7 @@ header {
 main {
   background-color: grey;
   width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -379,21 +380,32 @@ main {
 
 .menu-services__icon {
   filter: var(--png-light-filter);
-  width: 50px;
+  width: calc(100vw / 8);
   align-self: center;
 }
 
 .menu-services__text {
   padding-top: .5rem;
+  line-height: 1.1rem;
 }
 
 .services h3 {
+  font-family: var(--font-pair);
   text-transform: uppercase;
   font-weight: bold;
   padding-top: .5rem;
 }
 
+.services__text {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 20px;
+  line-height: 1.3rem;
+  text-align: center;
 
+}
 
 
 
