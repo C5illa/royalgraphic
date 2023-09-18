@@ -264,7 +264,7 @@ header {
 /*POPUP ABOUT ME*/
 
 .box {
-  width: 80%;
+  width: 60vw;
   margin: 0 auto;
   border-radius: 25px;
   text-align: center;
@@ -299,9 +299,9 @@ header {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 80%;
+  width: 60vw;
   position: relative;
-  transition: all 5s ease-in-out;
+  
 }
 
 .popup h2 {
@@ -326,7 +326,6 @@ header {
   color: var(--secondary-color)
 }
 .popup .content {
-  max-height: 50%;
   text-align: center;
   line-height: 1.3rem;
 }
@@ -358,10 +357,10 @@ header {
 
 @media screen and (max-width: 900px){
   .box{
-    width: 50%;
+    width: 80vw;
   }
   .popup{
-    width: 50%;
+    width: 80vw;
   }
 }
 
