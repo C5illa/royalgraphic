@@ -139,6 +139,14 @@ header {
   text-align: center;
 }
 
+.popup__box {
+  display: inline;
+}
+
+.about-me {
+  width: fit-content;
+}
+
 .navbar__links li a:hover {
   font-weight: 600;
   transform: scale(1.08);
@@ -263,14 +271,14 @@ header {
 
 /*POPUP ABOUT ME*/
 
-.box {
+.popup__box {
   width: 60vw;
   margin: 0 auto;
   border-radius: 25px;
   text-align: center;
 }
 
-.button {
+.about-me {
   font-size: 1em;
   padding: 10px;
   color: #fff;
@@ -294,7 +302,7 @@ header {
   opacity: 1;
 }
 
-.popup {
+.popup__about-me {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -304,7 +312,7 @@ header {
   
 }
 
-.popup h2 {
+.popup__about-me h2 {
   margin-top: 0;
   text-transform: uppercase;
   text-align: center;
@@ -312,7 +320,7 @@ header {
   font-weight: bold;
   
 }
-.popup .close {
+.popup__about-me .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -322,15 +330,15 @@ header {
   text-decoration: none;
   color: var(--font-color);
 }
-.popup .close:hover {
+.popup__about-me .close:hover {
   color: var(--secondary-color)
 }
-.popup .content {
+.popup__about-me .content {
   text-align: center;
   line-height: 1.3rem;
 }
 
-.popup p {
+.popup__about-me p {
   padding-bottom: 1rem;
 }
 
