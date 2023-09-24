@@ -516,6 +516,38 @@ main {
 
 }
 
+.graphic-design__icon--hover:hover {
+  content: url('assets/icon-graphic-design-hover.png');
+}
+
+.gift__icon--hover:hover {
+  content: url('assets/icon-gift-hover.png');
+}
+
+.promotion__icon--hover:hover {
+  content: url('assets/icon-promotion-hover.png');
+}
+
+.decoration__icon--hover:hover {
+  content: url('assets/icon-decoration-hover.png');
+}
+
+.order1__icon--hover:hover {
+  content: url('assets/order1-hover.png');
+}
+
+.order2__icon--hover:hover {
+  content: url('assets/order2-hover.png');
+}
+
+.order3__icon--hover:hover {
+  content: url('assets/order3-hover.png');
+}
+
+.order4__icon--hover:hover {
+  content: url('assets/order4-hover.png');
+}
+
 @media (max-width: 768px) {
 
   .services, .order {
