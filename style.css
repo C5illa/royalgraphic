@@ -521,7 +521,9 @@ main {
   .services, .order {
   flex-direction: column;
  
- 
+ .gift__icon, .decoration__icon, .order2__icon, .order4__icon {
+  order: 2;
+ }
 
 
 
