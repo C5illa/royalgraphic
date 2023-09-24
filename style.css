@@ -143,10 +143,6 @@ header {
   display: inline;
 }
 
-.about-me {
-  width: fit-content;
-}
-
 .navbar__links li a:hover {
   font-weight: 600;
   transform: scale(1.08);
@@ -251,6 +247,10 @@ header {
 
 .navbar__links.active {
   display: flex;
+}
+
+.popup__box {
+  width: fit-content;
 }
 
 @keyframes openmenu {
