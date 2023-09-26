@@ -473,13 +473,13 @@ main {
 
 .services, .order {
   background-color: rgb(235, 235, 226);
-  width: 95%;
+  width: 90%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 3.5vw;
   text-align: center;
 }
 
