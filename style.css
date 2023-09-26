@@ -479,6 +479,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  gap: 15px;
   text-align: center;
 }
 
