@@ -346,12 +346,12 @@ header {
   text-decoration: none;
   color: var(--secondary-font-color);
   background-color: var(--font-color);
-  padding: .5rem;
-  border-radius: 9999px;
+  padding: .6rem;
+  border-radius: 20px;
 }
 
 .popup__button:hover {
-  background-color: var(--secondary-color);
+  color: var(--secondary-color)
 }
 
 .content h6 {
