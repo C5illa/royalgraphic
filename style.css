@@ -238,8 +238,8 @@ header {
 }
 
 .navbar__links ul {
-    flex-direction: column;
-    width: 100%;
+  flex-direction: column;
+  width: 100%;
 }
 
 .navbar__links li a {
@@ -248,10 +248,6 @@ header {
 
 .navbar__links.active {
   display: flex;
-}
-
-.popup__box {
-  width: fit-content;
 }
 
 @keyframes openmenu {
@@ -272,13 +268,6 @@ header {
 
 /*POPUP ABOUT ME - POPUP IMPRESSZUM*/
 
-.popup__box {
-  width: 60vw;
-  margin: 0 auto;
-  border-radius: 25px;
-  text-align: center;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -298,13 +287,12 @@ header {
 }
 
 .popup__about-me, .popup__impresszum {
-  margin: 70px auto;
+  margin: 40px auto;
   padding: 20px;
   background: #ffffff;
   border-radius: 5px;
-  width: 60vw;
+  width: 70vw;
   position: relative;
-  
 }
 
 .popup__about-me h2, .popup__impresszum h2 {
