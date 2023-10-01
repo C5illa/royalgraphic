@@ -495,7 +495,7 @@ main {
 .services h3, .order h3 {
   font-family: var(--font-pair);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
   padding-top: .5rem;
 }
 
