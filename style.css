@@ -332,7 +332,8 @@ header {
   color: var(--font-color);
 }
 .popup__about-me .close:hover {
-  color: var(--secondary-color)
+  color: rgba(10, 21, 34, .8);
+  transform: scale(1.1);
 }
 .popup__about-me .content {
   text-align: center;
@@ -347,12 +348,13 @@ header {
   text-decoration: none;
   color: var(--secondary-font-color);
   background-color: var(--font-color);
-  padding: .6rem;
-  border-radius: 20px;
+  padding: .5rem;
+  border-radius: 10px;
 }
 
 .popup__button:hover {
-  color: var(--secondary-color)
+  background-color: rgba(10, 21, 34, .8);
+  padding: .55rem;
 }
 
 .content h6 {
