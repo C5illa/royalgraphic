@@ -234,9 +234,9 @@
       <img class="SlideLogo" src="assets/portfolio_logo/nexpery_logo_2.jpg" alt="portfolio elem">
 
       <div class="portfolio__footer">
-        <a><img class="button button__black button__display-left" onclick="plusDivsLogo(-1)" src="assets/left_icon.png" alt="balra"></a>
+        <a><img class="button button__black button__display-left" onclick="plusDivs(-1, 0)" src="assets/left_icon.png" alt="balra"></a>
         <h4>Logó</h4>
-        <a><img class="button button__black button__display-right" onclick="plusDivsLogo(1)" src="assets/right_icon.png" alt="jobbra"></a>
+        <a><img class="button button__black button__display-right" onclick="plusDivs(1, 0)" src="assets/right_icon.png" alt="jobbra"></a>
       </div>
       
    </div>
@@ -265,9 +265,9 @@
       <img class="SlideCorp" src="assets/portfolio_arculat/letter_Thowa.jpg" alt="portfolio elem">
 
       <div class="portfolio__footer">
-        <a><img class="button button__black button__display-left" onclick="plusDivsCorp(-1)" src="assets/left_icon.png" alt="balra"></a>
+        <a><img class="button button__black button__display-left" onclick="plusDivs(-1, 1)" src="assets/left_icon.png" alt="balra"></a>
         <h4>Arculat</h4>
-        <a><img class="button button__black button__display-right" onclick="plusDivsCorp(1)" src="assets/right_icon.png" alt="jobbra"></a>
+        <a><img class="button button__black button__display-right" onclick="plusDivs(1, 1)" src="assets/right_icon.png" alt="jobbra"></a>
       </div>
       
    </div>
@@ -299,9 +299,9 @@
       <img class="SlideOther" src="assets/portfolio_egyeb/rollup_Sakksziget.jpg" alt="portfolio elem">
     
       <div  class="portfolio__footer">
-        <a><img class="button button__black button__display-left" onclick="plusDivsOther(-1)" src="assets/left_icon.png" alt="balra"></a>
+        <a><img class="button button__black button__display-left" onclick="plusDivs(-1, 2)" src="assets/left_icon.png" alt="balra"></a>
         <h4>Egyéb</h4>
-        <a><img class="button button__black button__display-right" onclick="plusDivsOther(1)" src="assets/right_icon.png" alt="jobbra"></a>
+        <a><img class="button button__black button__display-right" onclick="plusDivs(1, 2)" src="assets/right_icon.png" alt="jobbra"></a>
       </div>      
       
    </div>
@@ -524,62 +524,25 @@
 
 
 <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
+  var slideIndex = [1,1,1];
+  var slideId = ["SlideLogo", "SlideCorp", "SlideOther"]
+  showDivs(1, 0);
+  showDivs(1, 1);
+  showDivs(1, 2);
   
-  function plusDivsLogo(n) {
-    showDivs(slideIndex += n);
+  function plusDivs(n, no) {
+    showDivs(slideIndex[no] += n, no);
   }
   
-  function showDivs(n) {
+  function showDivs(n, no) {
     var i;
-    var x = document.getElementsByClassName("SlideLogo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";  
     }
-    x[slideIndex-1].style.display = "block";  
-  }
-</script>
-
-<script>
-var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivsCorp(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("SlideCorp");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-</script>
-
- <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivsOther(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("SlideOther");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
+    x[slideIndex[no]-1].style.display = "block";  
   }
   </script>
 

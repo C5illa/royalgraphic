@@ -616,7 +616,7 @@ main {
 }
 
 .button {
-  
+  filter: var(--png-light-filter);
   height: 30px;
 }
 
