@@ -483,7 +483,7 @@ main {
 
 .menu-services__icon, .menu-order__icon {
   filter: var(--png-light-filter);
-  width: clamp(50px, 10vw, 100px);
+  width: 100px;
   align-self: center;
 }
 
@@ -544,22 +544,31 @@ main {
 
 @media (max-width: 860px) {
 
-  .services, .order {
+.services, .order {
   flex-direction: column;
- 
- .gift__icon, .decoration__icon, .order2__icon, .order4__icon {
+  width: 80%;
+  gap: 6vh;
+  }
+
+.gift__icon, .decoration__icon, .order2__icon, .order4__icon {
   order: 2;
  }
-
-
-
-}
 
 .menu-services__item, .menu-order__item {
   display: flex;
   flex-direction: row;
 }
 
+.graphic-design__text, .gift__text, .promotion__text, .decoration__text {
+ flex-grow: 2;
+}
+}
+
+@media (max-width: 480px) {
+
+.menu-services__icon, .menu-order__icon {
+  width: 80px;
+}
 }
 
 
