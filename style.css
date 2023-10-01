@@ -349,10 +349,6 @@ header {
   text-transform: uppercase;
 }
 
-.popup2 {
-  width: 90vw;;
-}
-
 .popup__impresszum {
   color: var(--font-color);
 }
@@ -365,13 +361,10 @@ header {
   width: 111px;
 }
 
-@media screen and (max-width: 900px){
-  .box{
-    width: 80vw;
-  }
-  .popup{
-    width: 80vw;
-  }
+@media screen and (max-width: 600px){
+  .popup__about-me, .popup__impresszum {
+    width: 90%;
+   }
 }
 
 
@@ -551,7 +544,7 @@ main {
   content: url('assets/order4-hover.png');
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
 
   .services, .order {
   flex-direction: column;
@@ -629,7 +622,7 @@ main {
   transform: translateX(2px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .portfolio {
     flex-direction: column;
     gap: 2vh;
@@ -774,6 +767,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  text-transform: uppercase;
   padding: .5rem;
   margin-top: .5rem;
   width: 90%;
@@ -813,7 +807,7 @@ footer {
   color: var(--secondary-font-color);
 }
 
-.footer__content a:hover {
+.footer__content a:hover, .popup__box--hover:hover {
   color: var(--secondary-color);
   transform: scale(1.08);
 }
