@@ -616,16 +616,16 @@ main {
 }
 
 .button {
-  filter: var(--png-light-filter);
+  
   height: 30px;
 }
 
 .button__display-left:hover {
-  transform: translateX(-4px);
+  transform: translateX(-2px);
 }
 
 .button__display-right:hover {
-  transform: translateX(4px);
+  transform: translateX(2px);
 }
 
 @media (max-width: 768px) {
