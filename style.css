@@ -589,6 +589,7 @@ main {
 
 .portfolio__container {
   width: 29vw;
+  align-items: center;
 }
 
 .portfolio__footer {
