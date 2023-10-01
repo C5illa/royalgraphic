@@ -270,7 +270,7 @@ header {
 
 }
 
-/*POPUP ABOUT ME*/
+/*POPUP ABOUT ME - POPUP IMPRESSZUM*/
 
 .popup__box {
   width: 60vw;
@@ -297,7 +297,7 @@ header {
   opacity: 1;
 }
 
-.popup__about-me {
+.popup__about-me, .popup__impresszum {
   margin: 70px auto;
   padding: 20px;
   background: #ffffff;
@@ -307,7 +307,7 @@ header {
   
 }
 
-.popup__about-me h2 {
+.popup__about-me h2, .popup__impresszum h2 {
   margin-top: 0;
   text-transform: uppercase;
   text-align: center;
@@ -315,7 +315,7 @@ header {
   font-weight: bold;
   
 }
-.popup__about-me .close {
+.popup__about-me .close, .popup__impresszum .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -325,16 +325,16 @@ header {
   text-decoration: none;
   color: var(--font-color);
 }
-.popup__about-me .close:hover {
+.popup__about-me .close:hover, .popup__impresszum .close:hover {
   color: rgba(10, 21, 34, .8);
   transform: scale(1.1);
 }
-.popup__about-me .content {
+.popup__about-me .content, .popup__impresszum .content {
   text-align: center;
   line-height: 1.3rem;
 }
 
-.popup__about-me p {
+.popup__about-me p, .popup__impresszum p {
   padding-bottom: 1rem;
 }
 
@@ -356,11 +356,22 @@ header {
   font-weight: 800;
 }
 
-.profile__tag {
+.profile__tag, .impresszum__tag {
   font-family: var(--font-pair);
   text-transform: uppercase;
 }
 
+.popup2 {
+  width: 90vw;;
+}
+
+.popup__impresszum {
+  color: var(--font-color);
+}
+
+.impresszum__tag {
+  padding: 1rem;
+}
 
 .profile-pic {
   width: 111px;
@@ -644,6 +655,13 @@ main {
 }
 
 
+
+
+
+
+/*------------------------------------*\
+  #PRICE
+\*------------------------------------*/
 
 
 
