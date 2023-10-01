@@ -626,11 +626,13 @@ main {
 }
 
 .button__display-left:hover {
-  transform: translateX(-2px);
+  transform: translateX(-1px);
+  cursor: pointer;
 }
 
 .button__display-right:hover {
-  transform: translateX(2px);
+  transform: translateX(1px);
+  cursor: pointer;
 }
 
 @media (max-width: 860px) {
@@ -779,7 +781,7 @@ footer {
   text-transform: uppercase;
   padding: .5rem;
   margin-top: .5rem;
-  width: 90%;
+  width: 80%;
 }
 
 .footer__copyright {
@@ -810,10 +812,16 @@ footer {
   width: 280px;
 }
 
+
 .footer__content a {
   text-decoration: none;
+  margin-top: 1rem;
   font-size: clamp(10px, 1.1rem, 14px);
   color: var(--secondary-font-color);
+}
+
+.popup__box--hover {
+  margin-top: .7rem;
 }
 
 .footer__content a:hover, .popup__box--hover:hover {
@@ -848,7 +856,7 @@ footer {
     align-items: center;
   }
 
-.footer__content a {
+.footer__content li a {
   padding: .4rem;
   }
 }
