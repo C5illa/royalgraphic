@@ -628,13 +628,11 @@ main {
     gap: 2vh;
   }
 
-.portfolio__container {
-  width: 80vw;
-
+  .portfolio__container {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
-
-}
-
 
 
 
