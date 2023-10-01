@@ -547,7 +547,7 @@ main {
 .services, .order {
   flex-direction: column;
   width: 80%;
-  gap: 6vh;
+  gap: 3vh;
   }
 
 .gift__icon, .decoration__icon, .order2__icon, .order4__icon {
@@ -557,6 +557,10 @@ main {
 .menu-services__item, .menu-order__item {
   display: flex;
   flex-direction: row;
+}
+
+.menu-services__text, .menu-order__text {
+  padding: 1rem;
 }
 
 .graphic-design__text, .gift__text, .promotion__text, .decoration__text {
