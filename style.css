@@ -78,7 +78,6 @@ html {
   letter-spacing: .5px;
   text-align: center;
   font-family: var(--font-pair);
-  
 }
 
 
@@ -467,7 +466,6 @@ main {
 \*------------------------------------*/
 
 .services, .order {
-  background-color: rgb(235, 235, 226);
   width: 90%;
   padding-top: 2rem;
   padding-bottom: 2rem;
