@@ -71,8 +71,9 @@ html {
 
 #menu-services, #menu-portfolio, #menu-price, #menu-order, #menu-contact {
   text-transform: uppercase;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: .5px;
   text-align: center;
@@ -578,16 +579,16 @@ main {
 \*------------------------------------*/
 
 .portfolio {
-  width: 90%;
+  width: 90vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 1vw;
   align-items: center;
+  justify-content: space-between;
 }
 
 .portfolio__container {
-  width: 29vw;
+  width: 25vw;
   align-items: center;
 }
 
@@ -595,7 +596,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: center;
   margin-top: 2vh;
   font-family: var(--main-font);
   font-weight: bold;
@@ -603,11 +604,10 @@ main {
 }
 
 .portfolio__footer h3 {
-  background-color: var(--secondary-color);
-  width: 45%;
-  padding: 1rem;
+  color: var(--font-color);
+  width: 40%;
+  padding: .6rem;
   text-align: center;
-  border-radius: 5px;
 }
 
 .SlideLogo, .SlideCorp, .SlideOther {
@@ -616,7 +616,7 @@ main {
 }
 
 .button {
-  filter: var(--png-light-filter);
+  filter: var(--png-dark-filter);
   height: 32px;
 }
 
