@@ -53,7 +53,9 @@ h2     { font-size: clamp(16px, 3vw, 22px); }
 
 h3     { font-size: clamp(14px, 2.2vw, 17px);}
 
-h4     { font-size: clamp(10px, 2vw, 13px); } 
+h4     { font-size: clamp(12px, 2.1vw, 13px); } 
+
+
 
 
 
@@ -93,7 +95,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  width: 100%;
+  width: 100vw;
   background: url('assets/cover.jpg') no-repeat center;
   background-size: cover;
   height: 520px;
@@ -472,19 +474,20 @@ main {
 \*------------------------------------*/
 
 .services, .order {
-  width: 90%;
+  width: 90vw;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 3.5vw;
+  justify-content: space-between;
   text-align: center;
 }
 
 .menu-services__item, .menu-order__item {
   display: flex;
   flex-direction: column;
+  width: 22vw;
 }
 
 .menu-services__icon, .menu-order__icon {
@@ -496,6 +499,11 @@ main {
 .menu-services__text, .menu-order__text {
   padding-top: .5rem;
   line-height: 1.1rem;
+}
+
+.menu-services__text--grey {
+  opacity: .6;
+  font-size: .9rem;
 }
 
 .services h3, .order h3 {
@@ -563,6 +571,7 @@ main {
 .menu-services__item, .menu-order__item {
   display: flex;
   flex-direction: row;
+  width: 85vw;
 }
 
 .menu-services__text, .menu-order__text {
@@ -574,10 +583,10 @@ main {
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
 
 .menu-services__icon, .menu-order__icon {
-  width: 80px;
+  width: 53px;
 }
 }
 
