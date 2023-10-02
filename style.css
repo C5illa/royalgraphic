@@ -265,7 +265,9 @@ header {
 
 }
 
-/*POPUP ABOUT ME - POPUP IMPRESSZUM*/
+/*------------------------------------*\
+  #POPUP ABOUT-ME POPUP IMPRESSZUM
+\*------------------------------------*/
 
 .overlay {
   position: fixed;
@@ -354,6 +356,10 @@ header {
 
 .impresszum__tag {
   padding: 1rem;
+}
+
+.impresszum__header--bold {
+  font-weight: bold;
 }
 
 .profile-pic {
