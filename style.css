@@ -620,7 +620,6 @@ main {
 }
 
 .portfolio__footer h3 {
-  color: var(--font-color);
   width: 40%;
   padding: .6rem;
   text-align: center;
