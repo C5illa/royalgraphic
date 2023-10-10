@@ -670,7 +670,14 @@ main {
   #PRICE
 \*------------------------------------*/
 
+.price__text--bold {
+  font-weight: bold;
+}
 
+.price__text--font-pair {
+  font-family: var(--font-pair);
+  text-transform: uppercase;
+}
 
 
 
