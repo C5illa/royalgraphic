@@ -643,11 +643,13 @@ main {
 .button__display-left:hover {
   transform: translateX(-1px);
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 .button__display-right:hover {
   transform: translateX(1px);
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 @media (max-width: 860px) {
