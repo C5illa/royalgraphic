@@ -637,13 +637,13 @@ main {
 }
 
 .button__display-left:hover {
-  transform: translateX(-1px);
+  transform: translateX(-2px);
   cursor: pointer;
   filter: var(--png-light-filter);
 }
 
 .button__display-right:hover {
-  transform: translateX(1px);
+  transform: translateX(2px);
   cursor: pointer;
   filter: var(--png-light-filter);
 }
@@ -675,6 +675,11 @@ main {
 .price__text--font-pair {
   font-family: var(--font-pair);
   text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.price__text--content {
+  padding: 1.2rem;
 }
 
 
@@ -809,13 +814,16 @@ footer {
 .footer__content--link {
   text-decoration: none;
   font-size: clamp(10px, 1.1rem, 14px);
+  font-weight: 450;
   color: var(--secondary-font-color);
-  padding: .8rem;
 }
   
-.footer__content--link:hover {
-  color: var(--secondary-color);
+.footer__content li:hover {
   transform: scale(1.08);
+}
+
+.footer__content--link:hover {
+  color: var(--secondary-color)
 }
 
 .footer__up {
@@ -874,8 +882,7 @@ footer {
 .footer__content ul {
   flex-direction: column;
   align-items: center;
-  
-  }
+}
 
 
 .footer__content li {
