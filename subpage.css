@@ -33,7 +33,7 @@
  }
   
   body {
-    width: 80vw;
+    width: 70vw;
     text-align: justify;
     margin: 0 auto;
     padding-top: 2rem;
@@ -120,9 +120,9 @@ li {
   \*------------------------------------*/
 
 .close {
-    position: absolute;
+    position: fixed;
     top: 40px;
-    right: 40px;
+    right: 30px;
     transition: all 200ms;
     font-size: 32px;
     font-weight: bold;
@@ -137,7 +137,7 @@ li {
 
 .button__wrapper {
     display: flex;
-    width: 70%;
+    width: 60%;
     justify-content: space-evenly;
     margin: 0 auto;
     padding-top: 4em;
