@@ -75,6 +75,10 @@ h3 {
     text-align: center;
   }
 
+.text__left {
+  text-align: left;
+}
+
 .subtitle__1 {
     font-weight: 450;
     padding-top: 1em;
