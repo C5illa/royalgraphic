@@ -713,7 +713,7 @@ main {
 .contact__review--write {
   padding-top: .65rem;
   font-size: 1rem;
-  font-weight: light;
+  font-weight: 200;
   text-align: center;
 }
 

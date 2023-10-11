@@ -3,11 +3,8 @@
     --secondary-font-color: #ffffff;
     --secondary-color:      #00B3CC;
     --main-font:            'Roboto', sans-serif;
-    --slab-font:            'Roboto Slab', serif;
-    --serif-font:           'Roboto Serif', serif; 
     --font-pair:            'Raleway', sans-serif; 
     --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
-    --png-dark-filter:       invert(7%) sepia(10%) saturate(3768%) hue-rotate(172deg) brightness(95%) contrast(97%);     
  }
 
    
@@ -24,7 +21,7 @@
   
   
   /*------------------------------------*\
-    #MARGINS
+    #BODY
   \*------------------------------------*/
   
   html {
@@ -94,7 +91,7 @@ h3 {
     font-weight: 200;
     margin-top: -1.1em;
     text-align: center;
-    diplay: inline;
+    display: inline;
 }
 
 .subtitle__minus-margin {
@@ -113,6 +110,14 @@ li {
     list-style-type: disc;
     margin-left: 2em;
 }
+
+
+
+
+
+ /*------------------------------------*\
+    #BUTTONS
+  \*------------------------------------*/
 
 .close {
     position: absolute;
