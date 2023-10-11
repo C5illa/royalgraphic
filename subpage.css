@@ -149,7 +149,7 @@ li {
 }
 
 .button__back:hover {
-    transform: translateX(-8px);
+    transform: translateX(-5px);
     filter: var(--png-light-filter);
   }
 
