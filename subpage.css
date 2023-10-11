@@ -1,0 +1,88 @@
+:root {
+    --font-color:           #0A1522;
+    --secondary-font-color: #ffffff;
+    --secondary-color:      #00B3CC;
+    --main-font:            'Roboto', sans-serif;
+    --slab-font:            'Roboto Slab', serif;
+    --serif-font:           'Roboto Serif', serif; 
+    --font-pair:            'Raleway', sans-serif; 
+    --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
+    --png-dark-filter:       invert(7%) sepia(10%) saturate(3768%) hue-rotate(172deg) brightness(95%) contrast(97%);     
+ }
+
+   
+  /*------------------------------------*\
+  #BOX-SIZING
+  \*------------------------------------*/
+  
+  * {
+    box-sizing: border-box;
+    }
+  
+  
+  
+  
+  
+  /*------------------------------------*\
+    #MARGINS
+  \*------------------------------------*/
+  
+  html {
+    margin: 0px;
+    padding: 0px;  
+    font-size:   min(3.2vw, 14px);
+    font-family: 'Roboto', sans-serif;
+    color:       var(--font-color);
+ }
+  
+  body {
+    width: 80vw;
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.3rem;
+  }
+  
+  h1 {
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-pair);
+    font-weight: 600;
+  }
+  
+  
+  
+  h1     { font-size: clamp(19px, 5.5vw, 55px); }
+  
+  h2     { font-size: clamp(16px, 3vw, 22px); }
+  
+  h3     { font-size: clamp(14px, 2.2vw, 17px);}
+  
+  h4     { font-size: clamp(12px, 2.1vw, 13px); } 
+
+
+.button__print--link, .button__back--link {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    padding: .8rem;
+}
+
+ .button__print, .button__back {
+    background-color: var(--font-color);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  
+  .button__print:hover, .button__back:hover {
+    background-color: rgba(10, 21, 34, .8);
+  }
+  
+  
+  
