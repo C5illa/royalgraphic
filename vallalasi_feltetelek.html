@@ -24,6 +24,19 @@
   <h2>Megrendelésével Ön elfogadja jelen vállalási feltételeimet!</h2>
 </header>
 
+
+
+
+
+
+<a class="close" onclick="openWin()" href="#">&times;</a>
+
+  
+
+
+
+
+
 <div class="wrapper__text">
 
   <h3>1.) SZERZŐDŐ FELEK</h3>
@@ -361,14 +374,34 @@
 
 </div>
 
-<div class="button__print">
-    <a class="button__print--link" target="_blank" href="assets/vallalasi_feltetelek.pdf">Megnyitás PDF fájlként</a>
+
+<div class="button__wrapper">
+
+  <div class="button__back">
+    <a href="index.html"><img class="button__back--link" src=assets/left_icon.png alt="back"></a>
+    </div>
+
+  <div class="button__print">
+    <a href="assets/vallalasi_feltetelek.pdf" target="_blank" alt="print"><img src="assets/icon-print.png" class="button__print--link"></a>
+  </div>
+
 </div>
 
-<div class="button__back">
-  <a class="button__back--link" href="index.html">vissza a főoldalra</a>
-</div>
+
 
 </body>
+
+
+<script>
+  
+  let myWindow;
+  
+  function openWin() {
+    myWindow = window.open("index.html");
+  }
+  
+  </script>
+
+
 </html>
 

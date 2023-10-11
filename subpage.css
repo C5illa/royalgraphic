@@ -114,24 +114,46 @@ li {
     margin-left: 2em;
 }
 
-.button__print--link, .button__back--link {
-    display: block;
+.close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    transition: all 200ms;
+    font-size: 32px;
+    font-weight: bold;
     text-decoration: none;
-    color: var(--secondary-font-color);
-    padding: .8rem;
+    color: var(--font-color);
 }
 
- .button__print, .button__back {
-    background-color: var(--font-color);
-    border-radius: 10px;
-    width: 220px;
-    text-align: center;
-    text-transform: uppercase;
+.close:hover {
+    color: rgba(10, 21, 34, .8);
+    transform: scale(1.1);
+}
+
+.button__wrapper {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
     margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.button__back--link {
+    width: 40px;
+}
+
+.button__back:hover {
+    transform: translateX(-8px);
+    filter: var(--png-light-filter);
   }
-  
-  .button__print:hover, .button__back:hover {
-    background-color: rgba(10, 21, 34, .8);
+
+  .button__print--link {
+    width: 40px;
+}
+
+  .button__print--link:hover {
+    content: url('assets/icon-print-hover.png');
   }
   
   
