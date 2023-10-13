@@ -681,7 +681,17 @@ main {
   padding: 1.2rem;
 }
 
+.price__text--link {
+  font-family: var(--font-pair);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: bold;
+}
 
+.price__text--link:hover {
+  opacity: .7;
+}
 
 
 /*------------------------------------*\
