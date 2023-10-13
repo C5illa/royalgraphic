@@ -290,7 +290,7 @@ header {
   padding: 20px;
   background: #ffffff;
   border-radius: 5px;
-  width: 70vw;
+  width: 50vw;
   position: relative;
 }
 
@@ -364,9 +364,9 @@ header {
   width: 111px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 732px){
   .popup__about-me, .popup__impresszum {
-    width: 90%;
+    width: 85%;
    }
 }
 
