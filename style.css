@@ -287,7 +287,7 @@ header {
 
 .popup__about-me, .popup__impresszum {
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
   background: #ffffff;
   border-radius: 5px;
   width: 50vw;
@@ -313,7 +313,7 @@ header {
   color: var(--font-color);
 }
 .popup__about-me .close:hover, .popup__impresszum .close:hover {
-  color: rgba(10, 21, 34, .8);
+  color: rgba(10, 21, 34, .7);
   transform: scale(1.1);
 }
 .popup__about-me .content, .popup__impresszum .content {
@@ -336,6 +336,7 @@ header {
 .popup__button:hover {
   background-color: rgba(10, 21, 34, .85);
   padding: .4rem;
+  transition: all 200ms;
 }
 
 .profile__name {
