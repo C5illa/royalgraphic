@@ -179,4 +179,45 @@ li {
   }
   
   
-  
+  /*------------------------------------*\
+    #FAQ
+  \*------------------------------------*/
+
+ .faq {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.faq__question p {
+  font-family: var(--font-pair);
+  font-weight: 600;
+  margin: 5px;
+  padding: 0;
+  font-size: 1em;
+}
+
+.faq__answer p{
+  margin: 5px;
+  padding: 10px;
+  font-size: .9em;
+  font-style: italic;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.faq:hover{
+  cursor: pointer;
+}
+
+.faq__question:hover {
+  opacity: .7;
+}
+
+.faq__answer {
+  display: none;
+}
+
+.faq.active .faq__answer {
+  display: block;
+}
