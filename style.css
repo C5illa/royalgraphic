@@ -3,8 +3,10 @@
 \*------------------------------------*/
  :root {
     --font-color:           #0A1522;
+    --font-color-hover:     #535b64;
     --secondary-font-color: #ffffff;
     --secondary-color:      #00B3CC;
+    --secondary-color-hover:#4cc9db;
     --star-color:           #fbbc04;
     --main-font:            'Roboto', sans-serif;
     --slab-font:            'Roboto Slab', serif;
@@ -145,7 +147,7 @@ header {
 .navbar__links--link:hover {
   font-weight: 600;
   transform: scale(1.08);
-  filter: opacity(50%);
+  color: var(--font-color-hover);
 }
 
 /*HAMBURGER BUTTON*/
@@ -760,7 +762,6 @@ main {
 li {
   list-style-type: none;
   display: inline-block;
-  color: #1c597b;
  }
 
  .contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
@@ -837,7 +838,7 @@ footer {
 }
 
 .footer__content--link:hover {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .footer__up {
