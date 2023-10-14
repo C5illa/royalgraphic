@@ -211,7 +211,7 @@ li {
 }
 
 .faq__question:hover {
-  opacity: .7;
+  color: var(--secondary-color)
 }
 
 .faq__answer {
