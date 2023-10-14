@@ -1,7 +1,9 @@
 :root {
     --font-color:           #0A1522;
+    --font-color-hover:     #535b64;
     --secondary-font-color: #ffffff;
     --secondary-color:      #00B3CC;
+    --secondary-color-hover:#4cc9db;
     --main-font:            'Roboto', sans-serif;
     --font-pair:            'Raleway', sans-serif; 
     --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
@@ -220,4 +222,13 @@ li {
 
 .faq.active .faq__answer {
   display: block;
+}
+
+.faq__link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.faq__link:hover {
+  color: var(--secondary-color-hover);
 }

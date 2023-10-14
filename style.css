@@ -330,19 +330,15 @@ header {
 .popup__button {
   text-decoration: none;
   color: var(--secondary-color);
-  background-color: var(--font-color);
-  padding: .45rem;
-  border-radius: 7px;
   font-family: var(--font-pair);
   text-transform: uppercase;
-  font-size: .85rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .popup__button:hover {
-  background-color: var(--secondary-color);
-  transition: all 500ms;
-  color: var(--font-color);
+  color: var(--secondary-color-hover);
+  font-size: 1.02rem;
 }
 
 .profile__name {
