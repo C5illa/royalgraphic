@@ -746,13 +746,14 @@ main {
 
 .contact__icon {
     padding: 1.2rem;
-   }
+ }
 
 .contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
   width: 60px;
   padding-left: 10px;
   padding-right: 10px;
   filter: var(--png-dark-filter);
+  
 }
 
 li {
