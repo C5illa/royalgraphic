@@ -818,6 +818,7 @@ footer {
   text-transform: uppercase;
   width: 80%;
   padding: 1rem;
+  text-align: center;
 }
 
 .footer__content ul {
