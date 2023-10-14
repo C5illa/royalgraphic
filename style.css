@@ -761,8 +761,8 @@ li {
  }
 
  .contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out;
+  transform: rotate(360deg)scale(1.18);
+  transition: all 0.5s ease-in-out;
 }
 
 .contact__phone {
