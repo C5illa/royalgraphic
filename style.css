@@ -710,10 +710,6 @@ main {
   padding-bottom: 1rem;
 }
 
-.contact__review {
-  padding-top: .5rem;
-}
-
 .contact__review--reviews {
   text-decoration: none;
   color: var(--font-color);
@@ -766,10 +762,48 @@ li {
  }
 
  .contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
 }
 
+.contact__info {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  font-family: var(--font-pair);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.contact__text--small {
+  font-size: .7rem;
+}
+
+.contact__mail--link, .contact__tel--link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.contact__mail--link:hover {
+  opacity: .9;
+}
+
+.contact__border--top {
+  width: 100px;
+  border-top: 2px solid var(--font-color);
+  align-self: center;
+  padding-bottom: 1rem;
+}
+
+.contact__border--bottom {
+  width: 100px;
+  border-bottom: 2px solid var(--font-color);
+  align-self: center;
+  padding-bottom: 1rem;
+}
 
 .contact__phone {
   width: 100%;
@@ -778,6 +812,7 @@ li {
   font-weight: 600;
   display: flex;
   justify-content: center;
+  margin-top: -.8rem;
 }
 
 /*PHONE-ANIMATION*/
