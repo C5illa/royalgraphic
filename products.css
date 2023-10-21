@@ -92,6 +92,9 @@ h1 {
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(17, 1fr);
 }
+
+h1 {
+  font-size: 1.8em;
 }
 
 @media (max-width: 600px) {
@@ -127,10 +130,14 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   color: var(--font-color);
+  padding: .5rem;
+  background-color: rgba(10, 21, 34, .5);
+  border-radius: 8px;
+  z-index: 1;
 }
 
 .close:hover {
-  color: rgba(10, 21, 34, .8);
+  background-color: rgba(10, 21, 34, .7);
   transform: scale(1.1);
 }
 
