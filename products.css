@@ -42,6 +42,12 @@ h1 {
   line-height: 100%;
 }
 
+.product__text--small {
+  font-size: .5em;
+  font-family: var(--font-pair);
+  color: var(--font-color-hover);
+}
+
 
 
 
@@ -51,8 +57,7 @@ h1 {
 \*------------------------------------*/
 
 header {
-  width: 80vw;
-  margin: 0 auto;
+  width: 75w;
   padding-bottom: 3em;
   padding-top: 4em;
 }
@@ -100,11 +105,12 @@ header {
 }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 840px) {
     
 .product-container {
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(17, 1fr);
+   width: 80vw;
 }
 
 h1 {
@@ -112,19 +118,21 @@ h1 {
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     
 .product-container {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(25, 1fr);
+  width: 70vw;
 }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 460px) {
     
 .product-container {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(50, 1fr);
+  width: 60vw;
 }
 }
 
@@ -146,13 +154,16 @@ h1 {
   background-color: rgba(10, 21, 34, .5);
   padding: 3px 10px;
   border-radius: 9999px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   z-index: 1;
 }
 
 .close:hover {
   background-color: rgba(10, 21, 34, .6);
   transform: scale(.95);
+  box-shadow: none;
 }
 
 .button__wrapper {

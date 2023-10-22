@@ -520,7 +520,15 @@ main {
   border-radius: 20px;
   line-height: 1.3rem;
   text-align: center;
+}
 
+.services__link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.services__link:hover {
+  color: var(--secondary-color-hover);
 }
 
 .graphic-design__icon--hover:hover {
