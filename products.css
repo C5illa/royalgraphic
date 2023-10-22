@@ -35,8 +35,6 @@ html {
 
 h1 {
   font-size: 2.2em;
-  padding-bottom: 1rem;
-  padding-top: 3rem;
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font-pair);
@@ -49,16 +47,31 @@ h1 {
 
 
 /*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+header {
+  width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  padding-top: 4em;
+}
+
+
+
+
+
+/*------------------------------------*\
     #PRODUCTS
 \*------------------------------------*/
 
 .product-container {
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    column-gap: 10px;
+    column-gap: 15px;
     place-items: stretch;
 }
     
@@ -96,6 +109,7 @@ h1 {
 h1 {
   font-size: 1.8em;
 }
+}
 
 @media (max-width: 600px) {
     
@@ -108,11 +122,9 @@ h1 {
 @media (max-width: 380px) {
     
 .product-container {
-  width: 70vw;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(50, 1fr);
 }
-
 }
 
 
@@ -123,34 +135,34 @@ h1 {
 
 .close {
   position: fixed;
-  top: 30px;
-  right: 20px;
+  top: 25px;
+  right: 10px;
   transition: all 200ms;
   font-size: 32px;
   font-weight: bold;
   text-decoration: none;
   color: var(--font-color);
-  padding: .5rem;
   background-color: rgba(10, 21, 34, .5);
-  border-radius: 8px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   z-index: 1;
 }
 
 .close:hover {
-  background-color: rgba(10, 21, 34, .7);
-  transform: scale(1.1);
+  background-color: rgba(10, 21, 34, .6);
+  transform: scale(.95);
 }
 
 .button__wrapper {
   display: flex;
-  width: 60%;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  padding-top: 4em;
-  padding-bottom: 3em;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 .button__back--link {
+  display: block;
   width: 40px;
 }
 

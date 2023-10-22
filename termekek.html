@@ -19,18 +19,19 @@
 
 <body>
 
-    <header>     
-        <h1>Rendelhető termékek</h1>
-    </header>
+  <header>     
+    <h1>Rendelhető termékek</h1>
+  </header>
         
         
-        
-      <a class="close" onclick="openWin()" href="#">&times;</a>
+  <div class="button__close"></div>      
+    <a class="close" onclick="openWin()" href="#">&times;</a>
+  </div>    
     
     
 
 
-<div class="product-container">
+  <div class="product-container">
 
     <div class="product">
       <img class="product__pic" src="assets/.jpg" alt="">
@@ -583,18 +584,7 @@
         <br>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 
@@ -606,7 +596,7 @@
 
         <div class="button__back">
           <a href="index.html"><img class="button__back--link" src=assets/left_icon.png alt="back"></a>
-          </div>
+        </div>
       
     </div>
       
@@ -615,17 +605,17 @@
       
       
       
-      <script>
+   <script>
         
-        let myWindow;
+     let myWindow;
         
-        function openWin() {
-          myWindow = window.open("index.html");
-        }
-        
-        </script>
+     function openWin() {
+       myWindow = window.open("index.html");
+     }
+
+  </script>
       
       
-      </body>
+</body>
       
-      </html>
+</html>
