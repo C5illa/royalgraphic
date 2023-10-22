@@ -1,91 +1,92 @@
 :root {
-    --font-color:           #0A1522;
-    --font-color-hover:     #535b64;
-    --secondary-font-color: #ffffff;
-    --secondary-color:      #00B3CC;
-    --secondary-color-hover:#4cc9db;
-    --main-font:            'Roboto', sans-serif;
-    --font-pair:            'Raleway', sans-serif; 
-    --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
+  --font-color:           #0A1522;
+  --font-color-grey:      #868C92;
+  --font-color-hover:     #535b64;
+  --secondary-font-color: #ffffff;
+  --secondary-color:      #00B3CC;
+  --secondary-color-hover:#4cc9db;
+  --main-font:            'Roboto', sans-serif;
+  --font-pair:            'Raleway', sans-serif; 
+  --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
  }
 
    
-  /*------------------------------------*\
-  #BOX-SIZING
-  \*------------------------------------*/
+/*------------------------------------*\
+#BOX-SIZING
+\*------------------------------------*/
   
-  * {
-    box-sizing: border-box;
-    }
-  
-  
+* {
+  box-sizing: border-box;
+}
   
   
   
-  /*------------------------------------*\
-    #BODY
-  \*------------------------------------*/
   
-  html {
-    margin: 0px;
-    padding: 0px;  
-    font-size: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: var(--font-color);
- }
   
-  body {
-    width: 70vw;
-    text-align: justify;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    line-height: 1.5rem;
-  }
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
   
-  h1 {
-    font-size: 2.2em;
-    padding-bottom: 1rem;
-    padding-top: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: var(--font-pair);
-    font-weight: 600;
-    line-height: 100%;
-  }
+html {
+  margin: 0px;
+  padding: 0px;  
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+}
   
-  h2 {
-    text-align: center;
-    font-family: var(--font-pair);
-    text-transform: uppercase;
-    font-size: 1.3em;
-    padding-bottom: 3em;
-  }
+body {
+  width: 70vw;
+  text-align: justify;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+  
+h1 {
+  font-size: 2.2em;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-pair);
+  font-weight: 600;
+  line-height: 100%;
+}
+  
+h2 {
+  text-align: center;
+  font-family: var(--font-pair);
+  text-transform: uppercase;
+  font-size: 1.3em;
+  padding-bottom: 3em;
+}
   
 h3 {
-    font-size: 1em;
-    padding-bottom: 1.2em;
-    padding-top: 1.8em;
-    font-weight: bold;
-  }
+  font-size: 1em;
+  padding-bottom: 1.2em;
+  padding-top: 1.8em;
+  font-weight: bold;
+}
 
-  h4 {
-    font-size: 1em;
-    padding-bottom: 1em;
-    padding-top: 2em;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-  }
+h4 {
+  font-size: 1em;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .text__left {
   text-align: left;
 }
 
 .subtitle__1 {
-    font-weight: 450;
-    padding-top: 1em;
-    padding-bottom: .5em;
+  font-weight: 450;
+  padding-top: 1em;
+  padding-bottom: .5em;
 }
 
 .subtitle__underline {
@@ -94,105 +95,96 @@ h3 {
 }
 
 .subtitle__grey {
-    color: grey;
-    font-weight: 300;
-    margin-top: -1.1em;
-    text-align: center;
-    display: inline;
+  color: grey;
+  font-weight: 300;
+  margin-top: -1.1em;
+  text-align: center;
+  display: inline;
 }
 
 .subtitle__minus-margin {
-    margin-top: -2em;
+  margin-top: -2em;
 }
 
 .subtitle__italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .subtitle__blue {
-    color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .subtitle__small {
   font-size: .8em;
 }
 
-.subtitle__question {
-
-}
-
-.subtitle__answer {
-  
-}
-
 li {
-    list-style-type: disc;
-    margin-left: 2em;
+  list-style-type: disc;
+  margin-left: 2em;
 }
 
 
 
 
 
- /*------------------------------------*\
-    #BUTTONS
- \*------------------------------------*/
+/*-----------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
 
 .close {
-    position: fixed;
-    top: 40px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--font-color);
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 .close:hover {
-    color: rgba(10, 21, 34, .8);
-    transform: scale(1.1);
+  color: rgba(10, 21, 34, .8);
+  transform: scale(1.1);
 }
 
 .button__wrapper {
-    display: flex;
-    width: 60%;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    padding-top: 4em;
-    padding-bottom: 3em;
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-bottom: 3em;
 }
 
 .button__back--link {
-    width: 40px;
+  width: 40px;
 }
 
 .button__back:hover {
-    transform: translateX(-5px);
-    filter: var(--png-light-filter);
-  }
-
-  .button__print--link {
-    width: 40px;
+  transform: translateX(-5px);
+  filter: var(--png-light-filter);
 }
 
-  .button__print--link:hover {
-    content: url('assets/icon-print-hover.png');
-  }
+.button__print--link {
+  width: 40px;
+}
+
+.button__print--link:hover {
+  content: url('assets/icon-print-hover.png');
+}
   
   
 
 
 
-  /*------------------------------------*\
-    #FAQ
-  \*------------------------------------*/
+/*------------------------------------*\
+  #FAQ
+\*------------------------------------*/
 
- .faq {
+.faq {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 .faq__question p {
@@ -216,7 +208,7 @@ li {
 }
 
 .faq__question:hover {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .faq__answer {

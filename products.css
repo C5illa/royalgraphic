@@ -1,12 +1,13 @@
 :root {
-    --font-color:           #0A1522;
-    --font-color-hover:     #535b64;
-    --secondary-font-color: #ffffff;
-    --secondary-color:      #00B3CC;
-    --secondary-color-hover:#4cc9db;
-    --main-font:            'Roboto', sans-serif;
-    --font-pair:            'Raleway', sans-serif; 
-    --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
+  --font-color:           #0A1522;
+  --font-color-grey:      #868C92;
+  --font-color-hover:     #535b64;
+  --secondary-font-color: #ffffff;
+  --secondary-color:      #00B3CC;
+  --secondary-color-hover:#4cc9db;
+  --main-font:            'Roboto', sans-serif;
+  --font-pair:            'Raleway', sans-serif; 
+  --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
 }
 
 
@@ -14,7 +15,7 @@
 
 
 /*------------------------------------*\
-#BOX-SIZING
+  #BOX-SIZING
 \*------------------------------------*/
   
 * {
@@ -26,7 +27,7 @@
 
 
 /*------------------------------------*\
-#FONTS
+  #FONTS
 \*------------------------------------*/
       
 html {
@@ -53,11 +54,12 @@ h1 {
 
 
 /*------------------------------------*\
-    #HEADER
+  #HEADER
 \*------------------------------------*/
 
 header {
-  width: 75w;
+  width: 75vw;
+  margin: 0 auto;
   padding-bottom: 3em;
   padding-top: 4em;
 }
@@ -67,56 +69,68 @@ header {
 
 
 /*------------------------------------*\
-    #PRODUCTS
+  #PRODUCTS
 \*------------------------------------*/
 
 .product-container {
-    width: 85vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    column-gap: 15px;
-    place-items: stretch;
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  column-gap: 15px;
+  place-items: stretch;
 }
     
 .product__pic {
-    width: 100%;
+  width: 100%;
 }
 
 .product {
   text-align: center;
-   background-color: var(--product-background);
-   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-   border-radius: 30px;
-   margin-bottom: 25px;
-   padding: 2rem .5rem;
+  background-color: var(--product-background);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  padding: 2rem .5rem;
 }
       
 .product:hover {
   transform: scale(1.01);
 }
 
+
+
+
+
 @media (max-width: 1000px) {
     
 .product-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(13, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(13, 1fr);
 }
 }
+
+
+
+
 
 @media (max-width: 840px) {
     
 .product-container {
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(17, 1fr);
-   width: 80vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(17, 1fr);
+  width: 80vw;
 }
 
 h1 {
   font-size: 1.8em;
 }
 }
+
+
+
+
 
 @media (max-width: 680px) {
     
@@ -126,6 +140,10 @@ h1 {
   width: 70vw;
 }
 }
+
+
+
+
 
 @media (max-width: 460px) {
     
@@ -138,8 +156,10 @@ h1 {
 
 
 
+
+
 /*------------------------------------*\
-    #BUTTONS
+  #BUTTONS
 \*------------------------------------*/
 
 .close {
@@ -151,19 +171,12 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   color: var(--font-color);
-  background-color: rgba(10, 21, 34, .5);
-  padding: 3px 10px;
-  border-radius: 9999px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   z-index: 1;
 }
 
 .close:hover {
-  background-color: rgba(10, 21, 34, .6);
-  transform: scale(.95);
-  box-shadow: none;
+  transform: scale(1.1);
+  color: rgba(10, 21, 34, .8);
 }
 
 .button__wrapper {
