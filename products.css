@@ -8,6 +8,7 @@
   --main-font:            'Roboto', sans-serif;
   --font-pair:            'Raleway', sans-serif; 
   --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
+  --png-dark-filter:       invert(7%) sepia(10%) saturate(3768%) hue-rotate(172deg) brightness(95%) contrast(97%);    
 }
 
 
@@ -40,7 +41,13 @@ h1 {
   text-transform: uppercase;
   font-family: var(--font-pair);
   font-weight: 600;
-  padding-bottom: .4rem;
+  padding-bottom: 2rem;
+}
+
+.header__text--center {
+  text-align: center;
+  font-size: .9em;
+  line-height: 1.3em;
 }
 
 .product__text--small {
@@ -48,6 +55,15 @@ h1 {
   text-align: center;
   font-family: var(--font-pair);
   color: var(--font-color-hover);
+}
+
+.order__link {
+  text-decoration: none;
+  color: var(--product-background);
+}
+
+.order__link:hover {
+  color: var(--secondary-color-hover);
 }
 
 
@@ -182,6 +198,7 @@ h1 {
 
 .button__wrapper {
   display: flex;
+  background-color: var(--font-color);
   justify-content: center;
   padding-top: 1em;
   padding-bottom: 2em;
@@ -189,10 +206,70 @@ h1 {
 
 .button__back--link {
   display: block;
+  filter: var(--png-light-filter);
   width: 40px;
 }
 
 .button__back:hover {
   transform: translateX(-5px);
-  filter: var(--png-light-filter);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CONTACT
+\*------------------------------------*/
+
+#menu__products--contact {
+  background-color: var(--secondary-color);
+}
+
+.contact__info {
+  display: flex;
+  margin: 0 auto;
+  width: 80vw;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  font-family: var(--font-pair);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.contact__text--small {
+  font-size: .7rem;
+}
+
+.contact__mail--link, .contact__tel--link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.contact__mail--link:hover {
+  opacity: .6;
+}
+
+.contact__icon {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
+width: 57px;
+padding-left: 10px;
+padding-right: 10px;
+filter: var(--png-dark-filter);
+}
+
+li {
+list-style-type: none;
+display: inline-block;
+}
+
+.contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
+transform: scale(1.1);
+transition: all 0.1s ease-in-out;
 }
