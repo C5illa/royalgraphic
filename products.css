@@ -165,8 +165,8 @@ h1 {
 
 .close {
   position: fixed;
-  top: 25px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   transition: all 200ms;
   font-size: 32px;
   font-weight: bold;
