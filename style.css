@@ -119,8 +119,8 @@ header {
 }
 
 .navbar img {
-  width: 14.32rem;
-  margin: 1rem 3rem 0rem 3rem;
+  width: 16rem;
+  margin: 1rem 3rem .5rem 3rem;
 }
 
 .navbar__links ul {
@@ -918,8 +918,8 @@ footer {
 }
 
 .footer__logo {
-  height: 15px;
-  margin: 0 2px 3.2px 0;
+  height: 11.5px;
+  margin: 0 2px 3.2px 1px;
 }
 
 .footer__copyright {
