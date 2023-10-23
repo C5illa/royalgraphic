@@ -774,6 +774,10 @@ main {
     padding: 1.2rem;
 }
 
+.contact__logo {
+  width: 200px;
+}
+
 .contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
   width: 57px;
   padding-left: 10px;
