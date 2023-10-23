@@ -816,8 +816,12 @@ li {
   color: var(--font-color);
 }
 
+.contact__tel--link {
+  font-family: var(--main-font);
+}
+
 .contact__mail--link:hover {
-  opacity: .9;
+  opacity: .6;
 }
 
 .contact__border--top {

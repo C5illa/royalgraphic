@@ -248,8 +248,16 @@ h1 {
   color: var(--font-color);
 }
 
+.contact__tel--link {
+  font-family: var(--main-font);
+}
+
 .contact__mail--link:hover {
   opacity: .6;
+}
+
+.contact__logo {
+  width: 200px;
 }
 
 .contact__icon {
