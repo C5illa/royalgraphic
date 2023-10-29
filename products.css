@@ -50,11 +50,36 @@ h1 {
   line-height: 1.3em;
 }
 
+h4 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: var(--font-pair);
+  font-weight: 600;
+  font-size: 1.2 em;
+  padding-bottom: .2em;
+}
+
+p {
+  font-size: .8em;
+  padding-top: .2em;
+}
+
+.product__text {
+  font-size: .9em;
+  font-weight: 300;
+}
+
+.poduct__price {
+  font-size: 1em;
+  font-weight: 600;
+}
+
 .product__text--small {
-  font-size: .5em;
+  font-size: .6em;
   text-align: center;
   font-family: var(--font-pair);
   color: var(--font-color-hover);
+  padding-top: .7em;
 }
 
 .order__link {
@@ -109,7 +134,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 30px;
   margin-bottom: 25px;
-  padding: 2rem .5rem;
+  padding: .5em;
 }
       
 .product:hover {
