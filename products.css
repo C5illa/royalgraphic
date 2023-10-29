@@ -56,12 +56,10 @@ h4 {
   font-family: var(--font-pair);
   font-weight: 600;
   font-size: 1.2 em;
-  padding-bottom: .2em;
 }
 
 p {
   font-size: .7em;
-  padding-top: .2em;
   font-weight: 300;
 }
 
@@ -80,7 +78,6 @@ p {
   text-align: center;
   font-family: var(--font-pair);
   color: var(--font-color-hover);
-  padding-top: .7em;
 }
 
 .order__link {
