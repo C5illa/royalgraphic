@@ -60,8 +60,9 @@ h4 {
 }
 
 p {
-  font-size: .8em;
+  font-size: .7em;
   padding-top: .2em;
+  font-weight: 300;
 }
 
 .product__text {
@@ -69,9 +70,9 @@ p {
   font-weight: 300;
 }
 
-.poduct__price {
+.product__price {
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .product__text--small {
@@ -105,7 +106,7 @@ header {
   padding-bottom: 3em;
   padding-top: 4em;
 }
-
+   
 
 
 
