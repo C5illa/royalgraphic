@@ -76,6 +76,9 @@ h4 {
 p {
   font-size: .7em;
   font-weight: 300;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 125%;
 }
 
 .product__text {
@@ -89,10 +92,11 @@ p {
 }
 
 .product__text--small {
-  font-size: .6em;
+  font-size: .65em;
   text-align: center;
   font-family: var(--font-pair);
-  color: var(--font-color-hover);
+  font-weight: 400;
+  color: var(--secondary-color);
 }
 
 .order__link {
@@ -135,6 +139,7 @@ header {
   grid-template-rows: repeat(10, 1fr);
   column-gap: 15px;
   place-items: stretch;
+  padding-bottom: 3em;
 }
     
 .product__pic {
