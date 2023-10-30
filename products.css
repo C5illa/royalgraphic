@@ -42,6 +42,7 @@ h1 {
   font-family: var(--font-pair);
   font-weight: 600;
   padding-bottom: 2rem;
+  line-height: 125%;
 }
 
 h2 {
@@ -50,6 +51,7 @@ h2 {
   color: var(--secondary-color);
   font-weight: 400;
   padding-bottom: 1em;
+  line-height: 125%;
 }
 
 h3 {
@@ -57,6 +59,7 @@ h3 {
   font-weight: 300;
   padding-bottom: .6em;
   font-size: .9em;
+  line-height: 125%;
 }
 
 .header__text--center {
@@ -94,12 +97,16 @@ p {
   padding-bottom: .32em;
 }
 
-.product__text--small {
+.product__text--small, .text__small--uppercase {
   font-size: .65em;
   text-align: center;
   font-family: var(--font-pair);
   font-weight: 400;
   color: var(--secondary-color);
+}
+
+.text__small--uppercase {
+  text-transform: uppercase;
 }
 
 .order__link {
@@ -122,13 +129,19 @@ p {
 \*------------------------------------*/
 
 header {
-  width: 75vw;
+  width: 75%;
   margin: 0 auto;
   padding-bottom: 3em;
   padding-top: 4em;
+  display: flex;
+  flex-direction: column;
 }
    
-
+.logo {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: .4em;
+}
 
 
 
@@ -144,7 +157,7 @@ header {
   grid-template-rows: repeat(10, 1fr);
   column-gap: 15px;
   place-items: stretch;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
     
 .product__pic {
@@ -265,6 +278,16 @@ h1 {
 
 
 
+/*------------------------------------*\
+  #FOOTER INFO
+\*------------------------------------*/
+
+.footer__info {
+  padding-bottom: 2em;
+}
+
+
+
 
 /*------------------------------------*\
   #CONTACT
@@ -289,6 +312,8 @@ h1 {
 
 .contact__text--small {
   font-size: .7rem;
+  font-weight: 600;
+  color: var(--font-color)
 }
 
 .contact__mail--link, .contact__tel--link {
@@ -300,7 +325,7 @@ h1 {
   font-family: var(--main-font);
 }
 
-.contact__mail--link:hover {
+.contact__mail--link:hover, .contact__tel--link:hover {
   opacity: .6;
 }
 
