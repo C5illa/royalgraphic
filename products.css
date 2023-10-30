@@ -79,6 +79,7 @@ p {
   width: 90%;
   margin: 0 auto;
   line-height: 125%;
+  color: var(--font-color-hover)
 }
 
 .product__text {
@@ -102,6 +103,8 @@ p {
 .order__link {
   text-decoration: none;
   color: var(--product-background);
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .order__link:hover {
