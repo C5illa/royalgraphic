@@ -71,6 +71,7 @@ h4 {
   font-family: var(--font-pair);
   font-weight: 600;
   font-size: 1.2 em;
+  padding-bottom: .32em;
 }
 
 p {
@@ -90,6 +91,7 @@ p {
 .product__price {
   font-size: 1em;
   font-weight: 500;
+  padding-bottom: .32em;
 }
 
 .product__text--small {
