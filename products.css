@@ -103,6 +103,7 @@ p {
   font-family: var(--font-pair);
   font-weight: 400;
   color: var(--secondary-color);
+  margin-bottom: 5px;
 }
 
 .text__small--uppercase {
@@ -181,7 +182,7 @@ header {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1090px) {
     
 .product-container {
   grid-template-columns: repeat(4, 1fr);
@@ -193,7 +194,7 @@ header {
 
 
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
     
 .product-container {
   grid-template-columns: repeat(3, 1fr);
@@ -210,7 +211,7 @@ h1 {
 
 
 
-@media (max-width: 680px) {
+@media (max-width: 780px) {
     
 .product-container {
   grid-template-columns: repeat(2, 1fr);
@@ -223,7 +224,7 @@ h1 {
 
 
 
-@media (max-width: 460px) {
+@media (max-width: 550px) {
     
 .product-container {
   grid-template-columns: repeat(1, 1fr);
