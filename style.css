@@ -151,13 +151,14 @@ header {
   text-transform: uppercase;
   display: block;
   text-align: center;
-  border-radius: 9999px;
+  border-radius: 15px;
 }
 
 .navbar__contact--button:hover {
+  border-radius: 5px;
   background-color: var(--font-color);
-  color: var(--font-color-grey);
-  transition: all .9s ease;
+  color: var(--secondary-color);
+  transition: all .9s ease-in-out;
 }
 
 .popup__box {
