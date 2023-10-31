@@ -201,7 +201,7 @@ header {
 .product-container {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(17, 1fr);
-  width: 80vw;
+  width: 80%;
 }
 
 h1 {
@@ -231,7 +231,7 @@ h1 {
 .product-container {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(50, 1fr);
-  width: 60vw;
+  width: 60%;
 }
 }
 
