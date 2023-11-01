@@ -145,7 +145,9 @@ header {
   color: var(--font-color);
   border: 2px solid var(--font-color);
   text-decoration: none;
-  padding: .5rem .7rem;
+  padding: .5rem .5rem;
+  margin-top: .15rem;
+  margin-bottom: .15rem;
   margin-left: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -850,7 +852,7 @@ li {
 }
 
 .contact__mail--link:hover, .contact__tel--link:hover {
-  opacity: .6;
+  letter-spacing: 0.032rem;
 }
 
 .contact__border--top {
@@ -933,6 +935,7 @@ footer {
   
 .footer__content li:hover {
   transform: scale(1.08);
+  transform-origin: center center;
 }
 
 .footer__content--link:hover {
@@ -991,7 +994,7 @@ footer {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   
 .footer__content ul {
   flex-direction: column;
