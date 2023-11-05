@@ -814,7 +814,7 @@ main {
 }
 
 .contact__logo {
-  width: 200px;
+  width: 145px;
 }
 
 .contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
@@ -848,18 +848,15 @@ li {
 
 .contact__text--small {
   font-size: .7rem;
+  font-weight: 600;
 }
 
-.contact__mail--link, .contact__tel--link {
+.contact__mail--link {
   text-decoration: none;
   color: var(--font-color);
 }
 
-.contact__tel--link {
-  font-family: var(--main-font);
-}
-
-.contact__mail--link:hover, .contact__tel--link:hover {
+.contact__mail--link:hover {
   letter-spacing: 0.032rem;
 }
 
