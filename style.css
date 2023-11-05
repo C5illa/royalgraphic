@@ -5,7 +5,7 @@
 :root {
   --font-color:           #0A1522;
   --font-color-grey:      #868C92;
-  --font-color-hover:    rgba(10,21,34,.7);
+  --font-color-hover:     rgba(10,21,34,.7);
   --secondary-font-color: #ffffff;
   --secondary-color:      #00B3CC;
   --secondary-color-hover:#4cc9db;
@@ -755,7 +755,7 @@ main {
 }
 
 .price__text--link:hover {
-  opacity: .7;
+  color: var(--font-color-hover)
 }
 
 
@@ -781,7 +781,7 @@ main {
 }
 
 .contact__review--reviews:hover {
-  opacity: .6;
+  color: var(--font-color-hover);
 }
 
 .contact__review--stars {
