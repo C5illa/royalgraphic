@@ -1,7 +1,7 @@
 :root {
   --font-color:           #0A1522;
   --font-color-grey:      #868C92;
-  --font-color-hover:     #535b64;
+  --font-color-hover:     rgba(10,21,34,.7);
   --secondary-font-color: #ffffff;
   --secondary-color:      #00B3CC;
   --secondary-color-hover:#4cc9db;
@@ -330,7 +330,7 @@ h1 {
 }
 
 .contact__mail--link:hover, .contact__tel--link:hover {
-  opacity: .6;
+  color: var(--font-color-hover)
 }
 
 .contact__logo {
