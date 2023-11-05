@@ -10,6 +10,7 @@
   --secondary-color:      #00B3CC;
   --secondary-color-hover:#4cc9db;
   --star-color:           #fbbc04;
+  --blue-transparent:     rgba(0,179,204,.2);
   --main-font:            'Roboto', sans-serif;
   --slab-font:            'Roboto Slab', serif;
   --serif-font:           'Roboto Serif', serif; 
@@ -140,10 +141,14 @@ header {
   text-align: center;
 }
 
+.navbar__contact {
+  position: relative;
+}
+
 .navbar__contact--button {
   list-style: none;
   color: var(--font-color);
-  border: 2px solid var(--font-color);
+  border: 3px solid var(--blue-transparent);
   text-decoration: none;
   padding: .5rem .5rem;
   margin-top: .15rem;
@@ -157,10 +162,10 @@ header {
 }
 
 .navbar__contact--button:hover {
-  border-radius: 5px;
-  background-color: var(--font-color);
-  color: var(--secondary-color);
-  transition: all .9s ease-in-out;
+  border-radius: 7px;
+  border: 3px solid transparent;
+  background-color: var(--blue-transparent);
+  transition: all .7s ease-in-out;
 }
 
 .popup__box {
@@ -268,8 +273,11 @@ header {
   padding: .3rem 0rem;
 }
 
+.logo__item--arrow {
+  display: none;
+}
+
 .navbar__contact--button {
- 
   padding: .3rem .6rem;
   width: 32%;
   margin: 0 auto;
@@ -988,6 +996,15 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 280px;
+}
+
+.impresszum__mail--link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.impresszum__mail--link:hover {
+  color: var(--font-color-hover);
 }
 
 
