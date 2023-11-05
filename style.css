@@ -174,7 +174,7 @@ header {
 
 .navbar__links--link:hover {
   font-weight: 600;
-  transform: scale(1.05);
+  transform: scale(1.06);
   color: var(--font-color-hover);
 }
 
