@@ -796,9 +796,10 @@ main {
 }
 
 .contact__review--link {
-  font-size: .8rem;
+  font-size: .75rem;
   padding: .2rem .5rem .2rem .5rem;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--font-color);
   font-weight: 500;
 }
