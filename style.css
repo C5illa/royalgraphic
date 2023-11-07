@@ -281,6 +281,12 @@ header {
   padding: .3rem .6rem;
   width: 32%;
   margin: 0 auto;
+  border-color: transparent;
+  opacity: .7;
+}
+
+.navbar__contact--button:hover {
+  opacity: 1;
 }
 
 .navbar__links.active {
