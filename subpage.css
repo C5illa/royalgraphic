@@ -30,7 +30,6 @@
 html {
   margin: 0px;
   padding: 0px;  
-  font-size: 100%;
   font-family: 'Roboto', sans-serif;
   color: var(--font-color);
 }
@@ -226,4 +225,12 @@ li {
 
 .faq__link:hover {
   color: var(--secondary-color-hover);
+}
+
+
+
+
+
+@media (max-width: 860px) {
+{}
 }
