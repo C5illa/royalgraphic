@@ -232,5 +232,8 @@ li {
 
 
 @media (max-width: 860px) {
-{}
+
+p, li {
+  font-size: .9em;
+}
 }
