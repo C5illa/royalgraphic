@@ -174,7 +174,6 @@ header {
 
 .navbar__links--link:hover {
   font-weight: 600;
-  transform: scale(1.06);
   color: var(--font-color-hover);
 }
 
@@ -943,11 +942,6 @@ footer {
   font-size: clamp(10px, 1.1rem, 14px);
   font-weight: 450;
   color: var(--secondary-font-color);
-}
-
-.footer__content li:hover {
-  transform: scale(1.06);
-  transform-origin: center center;
 }
 
 .footer__content--link:hover {
