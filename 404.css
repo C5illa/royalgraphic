@@ -10,15 +10,12 @@
     --secondary-color:      #00B3CC;
     --secondary-color-hover:#4cc9db;
     --main-font:            'Roboto', sans-serif;
-    --slab-font:            'Roboto Slab', serif;
-    --serif-font:           'Roboto Serif', serif; 
     --font-pair:            'Raleway', sans-serif; 
   }
 
     
   
-  
-  
+    
   
 /*------------------------------------*\
   #BOX-SIZING
@@ -42,9 +39,9 @@ html {
   }
   
 .container-404 {
-    padding: 50px 0px;
+    width: 60%;
     margin: 0 auto;
-    width: 80%;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -57,17 +54,18 @@ html {
     line-height: 130%;
     font-size: 1.4rem;
 }
+  
+@media (max-width: 860px) {
 
-a {
-    padding: 6px 15px;
-    color: var(--font-color);
-    border-radius: 10px;
-    margin-top: 10px;
+  .container-404 {
+    width: 90%
+  }
 }
-  
-  
+
  
-  
+
+
+
 /*------------------------------------*\
   #FONTS
 \*------------------------------------*/
@@ -83,23 +81,28 @@ a {
     font-size: 3.2rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 32px;
+    line-height: 1.2;
+    padding: 50px;
   }
 
-  a {
+  .button-main {
     text-decoration: none;
     font-family: var(--font-pair);
+    color: var(--font-color);
     font-weight: 600;
     font-size: 1.1rem;
     text-transform: uppercase;
-    color: var(--font-color);
     background-color: var(--secondary-color);
+    margin-top: 20px;
+    padding: 6px 15px;
+    border-radius: 8px;
   }
 
-  a:hover {
+  .button-main:hover {
     background-color: var(--secondary-color-hover);
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
   }
