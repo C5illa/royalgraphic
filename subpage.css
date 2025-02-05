@@ -131,6 +131,11 @@ a:hover {
   color: var(--secondary-color-hover);
 }
 
+.subpage_logo {
+  max-height: 82px;
+  display: block;
+  margin: 0 auto;
+}
 
 
 /*-----------------------------------*\
