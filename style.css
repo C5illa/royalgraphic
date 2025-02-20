@@ -215,7 +215,7 @@ header {
 
 /***/
 
-@media (max-width: 940px) {
+@media (max-width: 1080px) {
 
 .navbar__button {
   display: flex;
@@ -247,18 +247,6 @@ header {
 
 .logo__item--arrow {
   display: none;
-}
-
-.navbar__contact--button {
-  padding: .3rem .6rem;
-  width: 32%;
-  margin: 0 auto;
-  border-color: transparent;
-  opacity: .7;
-}
-
-.navbar__contact--button:hover {
-  opacity: 1;
 }
 
 .navbar__links.active {
@@ -885,6 +873,11 @@ li {
   display: flex;
   justify-content: center;
   margin-top: -.8rem;
+}
+
+.contact__phone--tel {
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 /*PHONE-ANIMATION*/
